@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 2025 Calendar - Complete Sessions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #e10600;
+            margin-bottom: 10px;
+        }
+
+        .settings {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .setting-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        select,
+        input {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .race-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+            gap: 20px;
+        }
+
+        .race-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .race-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .race-header {
+            background-color: #e10600;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .race-content {
+            padding: 15px;
+        }
+
+        .race-date {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .session {
+            margin-bottom: 15px;
+            border-left: 3px solid #e10600;
+            padding-left: 10px;
+        }
+
+        .session-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .sprint-weekend {
+            position: absolute;
+            right: 15px;
+            background-color: #FF8700;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+        }
+
+        .race-info {
+            color: #666;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+            margin-top: 15px;
+            padding-top: 15px;
+        }
+
+        .race-card.next-event {
+            border: 2px solid #e10600;
+        }
+
+        .next-event-badge {
+            background-color: #e10600;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .session-time {
+            background-color: #f1f1f1;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .session-separator {
+            height: 1px;
+            background-color: #eee;
+            margin: 10px 0;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+
+        .tab.active {
+            background-color: #e10600;
+            color: white;
+            border-color: #e10600;
+        }
+
+        .tab:first-child {
+            border-radius: 4px 0 0 4px;
+        }
+
+        .tab:last-child {
+            border-radius: 0 4px 4px 0;
+        }
+
+        .search-filter {
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .race-round {
+            background-color: #333;
+            color: white;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+        }
+
+        .race-title {
+            flex: 1;
+            margin-left: 10px;
+        }
+
+        .race-header-content {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .race-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .collapse-btn {
+            background: none;
+            border: none;
+            color: #e10600;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .collapsed .session:not(:first-child) {
+            display: none;
+        }
+
+        .collapsed .race-info {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Formula 1 2025 Calendar</h1>
+        <p>View all F1 sessions in your local timezone</p>
+    </header>
+
+    <div class="settings">
+        <div class="setting-group">
+            <label for="timezone">Your Timezone:</label>
+            <select id="timezone">
+            </select>
+        </div>
+
+        <div class="setting-group">
+            <label for="timeFormat">Time Format:</label>
+            <select id="timeFormat">
+                <option value="12">12-hour (AM/PM)</option>
+                <option value="24">24-hour</option>
+            </select>
+        </div>
+
+        <div class="setting-group">
+            <label for="view">View:</label>
+            <select id="view">
+                <option value="all">All Sessions</option>
+                <option value="race">Race Only</option>
+                <option value="quali">Qualifying & Race</option>
+                <option value="sprint">Sprint Weekends Only</option>
+            </select>
+        </div>
+    </div>
+
+    <input type="text" id="searchFilter" class="search-filter"
+        placeholder="Search by race name, country, or circuit...">
+
+    <div class="tabs">
+        <div class="tab active" data-tab="upcoming">Upcoming Events</div>
+        <div class="tab" data-tab="all">All Events</div>
+        <div class="tab" data-tab="past">Past Events</div>
+    </div>
+
+    <div class="race-grid" id="raceGrid">
+    </div>
+
+    <script>
+        // F1 2025 Calendar data with all sessions
+        // Times are in UTC
+        const f1Calendar = [
+            {
+                name: "Australian Grand Prix",
+                round: 1,
+                location: "Melbourne",
+                country: "Australia",
+                circuit: "Albert Park Circuit",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "March 14, 2025", time: "01:30" },
+                    fp2: { date: "March 14, 2025", time: "05:00" },
+                    fp3: { date: "March 15, 2025", time: "01:30" },
+                    qualifying: { date: "March 15, 2025", time: "05:00" },
+                    race: { date: "March 16, 2025", time: "05:00" }
+                }
+            },
+            {
+                name: "Chinese Grand Prix",
+                round: 2,
+                location: "Shanghai",
+                country: "China",
+                circuit: "Shanghai International Circuit",
+                hasSprint: true,
+                sessions: {
+                    fp1: { date: "March 21, 2025", time: "03:30" },
+                    sprint_qualifying: { date: "March 21, 2025", time: "07:30" },
+                    sprint: { date: "March 22, 2025", time: "03:00" },
+                    qualifying: { date: "March 22, 2025", time: "07:00" },
+                    race: { date: "March 23, 2025", time: "07:00" }
+                }
+            },
+            {
+                name: "Japanese Grand Prix",
+                round: 3,
+                location: "Suzuka",
+                country: "Japan",
+                circuit: "Suzuka Circuit",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "April 4, 2025", time: "03:30" },
+                    fp2: { date: "April 4, 2025", time: "07:00" },
+                    fp3: { date: "April 5, 2025", time: "03:30" },
+                    qualifying: { date: "April 5, 2025", time: "07:00" },
+                    race: { date: "April 6, 2025", time: "06:00" }
+                }
+            },
+            {
+                name: "Bahrain Grand Prix",
+                round: 4,
+                location: "Sakhir",
+                country: "Bahrain",
+                circuit: "Bahrain International Circuit",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "April 11, 2025", time: "14:30" },
+                    fp2: { date: "April 11, 2025", time: "18:00" },
+                    fp3: { date: "April 12, 2025", time: "15:30" },
+                    qualifying: { date: "April 12, 2025", time: "19:00" },
+                    race: { date: "April 13, 2025", time: "18:00" }
+                }
+            },
+            {
+                name: "Saudi Arabian Grand Prix",
+                round: 5,
+                location: "Jeddah",
+                country: "Saudi Arabia",
+                circuit: "Jeddah Street Circuit",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "April 18, 2025", time: "14:30" },
+                    fp2: { date: "April 18, 2025", time: "18:00" },
+                    fp3: { date: "April 19, 2025", time: "14:30" },
+                    qualifying: { date: "April 19, 2025", time: "18:00" },
+                    race: { date: "April 20, 2025", time: "18:00" }
+                }
+            },
+            {
+                name: "Miami Grand Prix",
+                round: 6,
+                location: "Miami",
+                country: "United States",
+                circuit: "Miami International Autodrome",
+                hasSprint: true,
+                sessions: {
+                    fp1: { date: "May 2, 2025", time: "13:30" },
+                    sprint_qualifying: { date: "May 2, 2025", time: "17:30" },
+                    sprint: { date: "May 3, 2025", time: "13:00" },
+                    qualifying: { date: "May 3, 2025", time: "17:00" },
+                    race: { date: "May 4, 2025", time: "16:00" }
+                }
+            },
+            {
+                name: "Emilia Romagna Grand Prix",
+                round: 7,
+                location: "Imola",
+                country: "Italy",
+                circuit: "Autodromo Enzo e Dino Ferrari",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "May 16, 2025", time: "12:30" },
+                    fp2: { date: "May 16, 2025", time: "16:00" },
+                    fp3: { date: "May 17, 2025", time: "11:30" },
+                    qualifying: { date: "May 17, 2025", time: "15:00" },
+                    race: { date: "May 18, 2025", time: "14:00" }
+                }
+            },
+            {
+                name: "Monaco Grand Prix",
+                round: 8,
+                location: "Monte Carlo",
+                country: "Monaco",
+                circuit: "Circuit de Monaco",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "May 23, 2025", time: "12:30" },
+                    fp2: { date: "May 23, 2025", time: "16:00" },
+                    fp3: { date: "May 24, 2025", time: "11:30" },
+                    qualifying: { date: "May 24, 2025", time: "15:00" },
+                    race: { date: "May 25, 2025", time: "14:00" }
+                }
+            },
+            {
+                name: "Spanish Grand Prix",
+                round: 9,
+                location: "Barcelona",
+                country: "Spain",
+                circuit: "Circuit de Catalunya",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "May 30, 2025", time: "12:30" },
+                    fp2: { date: "May 30, 2025", time: "16:00" },
+                    fp3: { date: "May 31, 2025", time: "11:30" },
+                    qualifying: { date: "May 31, 2025", time: "15:00" },
+                    race: { date: "June 1, 2025", time: "14:00" }
+                }
+            },
+            {
+                name: "Canadian Grand Prix",
+                round: 10,
+                location: "Montreal",
+                country: "Canada",
+                circuit: "Circuit Gilles Villeneuve",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "June 13, 2025", time: "18:30" },
+                    fp2: { date: "June 13, 2025", time: "22:00" },
+                    fp3: { date: "June 14, 2025", time: "17:30" },
+                    qualifying: { date: "June 14, 2025", time: "21:00" },
+                    race: { date: "June 15, 2025", time: "19:00" }
+                }
+            },
+            {
+                name: "Austrian Grand Prix",
+                round: 11,
+                location: "Spielberg",
+                country: "Austria",
+                circuit: "Red Bull Ring",
+                hasSprint: true,
+                sessions: {
+                    fp1: { date: "June 27, 2025", time: "12:30" },
+                    sprint_qualifying: { date: "June 27, 2025", time: "16:30" },
+                    sprint: { date: "June 28, 2025", time: "11:00" },
+                    qualifying: { date: "June 28, 2025", time: "15:00" },
+                    race: { date: "June 29, 2025", time: "14:00" }
+                }
+            },
+            {
+                name: "British Grand Prix",
+                round: 12,
+                location: "Silverstone",
+                country: "United Kingdom",
+                circuit: "Circuit Silverstone",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "July 4, 2025", time: "12:30" },
+                    fp2: { date: "July 4, 2025", time: "16:00" },
+                    fp3: { date: "July 5, 2025", time: "11:30" },
+                    qualifying: { date: "July 5, 2025", time: "15:00" },
+                    race: { date: "July 6, 2025", time: "15:00" }
+                }
+            },
+            {
+                name: "Belgian Grand Prix",
+                round: 13,
+                location: "Spa-Francorchamps",
+                country: "Belgium",
+                circuit: "Spa-Francorchamps",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "July 25, 2025", time: "12:30" },
+                    fp2: { date: "July 25, 2025", time: "16:00" },
+                    fp3: { date: "July 26, 2025", time: "11:30" },
+                    qualifying: { date: "July 26, 2025", time: "15:00" },
+                    race: { date: "July 27, 2025", time: "14:00" }
+                }
+            },
+            {
+                name: "Hungarian Grand Prix",
+                round: 14,
+                location: "Budapest",
+                country: "Hungary",
+                circuit: "Hungaroring",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "August 1, 2025", time: "12:30" },
+                    fp2: { date: "August 1, 2025", time: "16:00" },
+                    fp3: { date: "August 2, 2025", time: "11:30" },
+                    qualifying: { date: "August 2, 2025", time: "15:00" },
+                    race: { date: "August 3, 2025", time: "14:00" }
+                }
+            },
+            {
+                name: "Dutch Grand Prix",
+                round: 15,
+                location: "Zandvoort",
+                country: "Netherlands",
+                circuit: "Circuit Zandvoort",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "August 29, 2025", time: "12:30" },
+                    fp2: { date: "August 29, 2025", time: "16:00" },
+                    fp3: { date: "August 30, 2025", time: "11:30" },
+                    qualifying: { date: "August 30, 2025", time: "15:00" },
+                    race: { date: "August 31, 2025", time: "14:00" }
+                }
+            },
+            {
+                name: "Italian Grand Prix",
+                round: 16,
+                location: "Monza",
+                country: "Italy",
+                circuit: "Autodromo Nazionale Monza",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "September 5, 2025", time: "12:30" },
+                    fp2: { date: "September 5, 2025", time: "16:00" },
+                    fp3: { date: "September 6, 2025", time: "11:30" },
+                    qualifying: { date: "September 6, 2025", time: "15:00" },
+                    race: { date: "September 7, 2025", time: "14:00" }
+                }
+            },
+            {
+                name: "Azerbaijan Grand Prix",
+                round: 17,
+                location: "Baku",
+                country: "Azerbaijan",
+                circuit: "Baku City Circuit",
+                hasSprint: true,
+                sessions: {
+                    fp1: { date: "September 19, 2025", time: "12:30" },
+                    sprint_qualifying: { date: "September 19, 2025", time: "16:30" },
+                    sprint: { date: "September 20, 2025", time: "11:00" },
+                    qualifying: { date: "September 20, 2025", time: "15:00" },
+                    race: { date: "September 21, 2025", time: "13:00" }
+                }
+            },
+            {
+                name: "Singapore Grand Prix",
+                round: 18,
+                location: "Singapore",
+                country: "Singapore",
+                circuit: "Marina Bay Street Circuit",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "October 3, 2025", time: "10:30" },
+                    fp2: { date: "October 3, 2025", time: "14:00" },
+                    fp3: { date: "October 4, 2025", time: "10:30" },
+                    qualifying: { date: "October 4, 2025", time: "14:00" },
+                    race: { date: "October 5, 2025", time: "13:00" }
+                }
+            },
+            {
+                name: "United States Grand Prix",
+                round: 19,
+                location: "Austin",
+                country: "United States",
+                circuit: "Circuit of the Americas",
+                hasSprint: true,
+                sessions: {
+                    fp1: { date: "October 17, 2025", time: "18:30" },
+                    sprint_qualifying: { date: "October 17, 2025", time: "22:30" },
+                    sprint: { date: "October 18, 2025", time: "18:00" },
+                    qualifying: { date: "October 18, 2025", time: "22:00" },
+                    race: { date: "October 19, 2025", time: "20:00" }
+                }
+            },
+            {
+                name: "Mexican Grand Prix",
+                round: 20,
+                location: "Mexico City",
+                country: "Mexico",
+                circuit: "Autodromo Hermanos Rodriguez",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "October 24, 2025", time: "19:30" },
+                    fp2: { date: "October 24, 2025", time: "23:00" },
+                    fp3: { date: "October 25, 2025", time: "18:30" },
+                    qualifying: { date: "October 25, 2025", time: "22:00" },
+                    race: { date: "October 26, 2025", time: "21:00" }
+                }
+            },
+            {
+                name: "Brazilian Grand Prix",
+                round: 21,
+                location: "São Paulo",
+                country: "Brazil",
+                circuit: "Autodromo Jose Carlos Pace Interlagos",
+                hasSprint: true,
+                sessions: {
+                    fp1: { date: "November 7, 2025", time: "15:30" },
+                    sprint_qualifying: { date: "November 7, 2025", time: "19:30" },
+                    sprint: { date: "November 8, 2025", time: "15:00" },
+                    qualifying: { date: "November 8, 2025", time: "19:00" },
+                    race: { date: "November 9, 2025", time: "18:00" }
+                }
+            },
+            {
+                name: "Las Vegas Grand Prix",
+                round: 22,
+                location: "Las Vegas",
+                country: "United States",
+                circuit: "Las Vegas Street Circuit",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "November 21, 2025", time: "03:30" },
+                    fp2: { date: "November 21, 2025", time: "07:00" },
+                    fp3: { date: "November 22, 2025", time: "03:30" },
+                    qualifying: { date: "November 22, 2025", time: "07:00" },
+                    race: { date: "November 23, 2025", time: "07:00" }
+                }
+            },
+            {
+                name: "Qatar Grand Prix",
+                round: 23,
+                location: "Lusail",
+                country: "Qatar",
+                circuit: "Losail International Circuit",
+                hasSprint: true,
+                sessions: {
+                    fp1: { date: "November 28, 2025", time: "13:30" },
+                    sprint_qualifying: { date: "November 28, 2025", time: "17:30" },
+                    sprint: { date: "November 29, 2025", time: "13:00" },
+                    qualifying: { date: "November 29, 2025", time: "17:00" },
+                    race: { date: "November 30, 2025", time: "16:00" }
+                }
+            },
+            {
+                name: "Abu Dhabi Grand Prix",
+                round: 24,
+                location: "Abu Dhabi",
+                country: "United Arab Emirates",
+                circuit: "Yas Marina Circuit",
+                hasSprint: false,
+                sessions: {
+                    fp1: { date: "December 5, 2025", time: "13:30" },
+                    fp2: { date: "December 5, 2025", time: "17:00" },
+                    fp3: { date: "December 6, 2025", time: "14:30" },
+                    qualifying: { date: "December 6, 2025", time: "18:00" },
+                    race: { date: "December 7, 2025", time: "17:00" }
+                }
+            }
+        ]
+        // Function to populate the timezone dropdown
+        function populateTimezones() {
+            const timezoneSelect = document.getElementById('timezone');
+            const timezones = Intl.supportedValuesOf('timeZone');
+
+            // Get user's timezone
+            const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+            // Add option groups by continent
+            const continents = {};
+
+            timezones.forEach(timezone => {
+                const continent = timezone.split('/')[0];
+                if (!continents[continent]) {
+                    continents[continent] = [];
+                }
+                continents[continent].push(timezone);
+            });
+
+            // Sort continents
+            const sortedContinents = Object.keys(continents).sort();
+
+            sortedContinents.forEach(continent => {
+                const optgroup = document.createElement('optgroup');
+                optgroup.label = continent;
+
+                continents[continent].sort().forEach(timezone => {
+                    const option = document.createElement('option');
+                    option.value = timezone;
+                    option.textContent = timezone.replace('_', ' ');
+                    if (timezone === userTimezone) {
+                        option.selected = true;
+                    }
+                    optgroup.appendChild(option);
+                });
+
+                timezoneSelect.appendChild(optgroup);
+            });
+        }
+
+        // Function to format time based on user preference
+        function formatTime(date, format) {
+            const hours = date.getHours();
+            const minutes = date.getMinutes();
+
+            if (format === '12') {
+                const period = hours >= 12 ? 'PM' : 'AM';
+                const displayHours = hours % 12 || 12;
+                return `${displayHours}:${minutes.toString().padStart(2, '0')} ${period}`;
+            } else {
+                return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+            }
+        }
+
+        // Function to format date
+        function formatDate(date) {
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString(undefined, options);
+        }
+
+        // Function to get session name for display
+        function getSessionName(key) {
+            const sessionNames = {
+                fp1: "Practice 1",
+                fp2: "Practice 2",
+                fp3: "Practice 3",
+                qualifying: "Qualifying",
+                sprintQualifying: "Sprint Qualifying",
+                sprint: "Sprint Race",
+                race: "Main Race"
+            };
+
+            return sessionNames[key] || key;
+        }
+
+        // Function to update race times based on selected timezone and filters
+        function updateRaceTimes() {
+            const timezone = document.getElementById('timezone').value;
+            const timeFormat = document.getElementById('timeFormat').value;
+            const viewMode = document.getElementById('view').value;
+            const searchText = document.getElementById('searchFilter').value.toLowerCase();
+            const activeTab = document.querySelector('.tab.active').dataset.tab;
+            const raceGrid = document.getElementById('raceGrid');
+
+            // Clear existing race cards
+            raceGrid.innerHTML = '';
+
+            // Get current date for filtering events
+            const now = new Date();
+            let nextEventInfo = { date: new Date('2099-12-31'), race: null, sessionKey: null };
+
+            // Filter races based on search text
+            const filteredRaces = f1Calendar.filter(race => {
+                return race.name.toLowerCase().includes(searchText) ||
+                    race.location.toLowerCase().includes(searchText) ||
+                    race.country.toLowerCase().includes(searchText) ||
+                    race.circuit.toLowerCase().includes(searchText);
+            });
+
+            // Filter races based on view mode
+            const viewFilteredRaces = filteredRaces.filter(race => {
+                if (viewMode === 'all') return true;
+                if (viewMode === 'race') return true; // All races have races
+                if (viewMode === 'quali') return true; // All races have qualifying
+                if (viewMode === 'sprint') return race.hasSprint;
+                return true;
+            });
+
+            // Find the next upcoming session
+            viewFilteredRaces.forEach(race => {
+                Object.entries(race.sessions).forEach(([sessionKey, session]) => {
+                    const sessionDate = new Date(`${session.date} ${session.time} UTC`);
+
+                    // Check if this is the next upcoming session
+                    if (sessionDate > now && sessionDate < nextEventInfo.date) {
+                        nextEventInfo = { date: sessionDate, race, sessionKey };
+                    }
+                });
+            });
+
+            // Filter races based on active tab
+            const tabFilteredRaces = viewFilteredRaces.filter(race => {
+                const raceDate = new Date(`${race.sessions.race.date} ${race.sessions.race.time} UTC`);
+
+                if (activeTab === 'upcoming') {
+                    // Check if any session is in the future
+                    let hasUpcomingSessions = false;
+                    Object.values(race.sessions).forEach(session => {
+                        const sessionDate = new Date(`${session.date} ${session.time} UTC`);
+                        if (sessionDate > now) {
+                            hasUpcomingSessions = true;
+                        }
+                    });
+                    return hasUpcomingSessions;
+                } else if (activeTab === 'past') {
+                    // Check if all sessions are in the past
+                    let allSessionsPast = true;
+                    Object.values(race.sessions).forEach(session => {
+                        const sessionDate = new Date(`${session.date} ${session.time} UTC`);
+                        if (sessionDate > now) {
+                            allSessionsPast = false;
+                        }
+                    });
+                    return allSessionsPast;
+                } else {
+                    // 'all' tab
+                    return true;
+                }
+            });
+
+            // Create race cards
+            tabFilteredRaces.forEach(race => {
+                // Create race card
+                const raceCard = document.createElement('div');
+                raceCard.className = 'race-card';
+
+                let isNextEvent = false;
+                let nextSessionKey = null;
+
+                // Check if this race has the next event
+                if (nextEventInfo.race && nextEventInfo.race.name === race.name) {
+                    raceCard.classList.add('next-event');
+                    isNextEvent = true;
+                    nextSessionKey = nextEventInfo.sessionKey;
+                }
+
+                // Start with header
+                let cardContent = `
+              <div class="race-header">
+                <div class="race-header-content">
+                  <div class="race-round">${race.round}</div>
+                  <div class="race-title">${race.name}</div>
+                  ${race.hasSprint ? '<div class="sprint-weekend">SPRINT</div>' : ''}
+                </div>
+              </div>
+              <div class="race-content">
+            `;
+
+                // If this is the next event, add a badge
+                if (isNextEvent) {
+                    cardContent += `<div class="next-event-badge">NEXT EVENT: ${getSessionName(nextSessionKey).toUpperCase()}</div>`;
+                }
+
+                // Add sessions based on view mode
+                const sessions = Object.entries(race.sessions);
+
+                // Function to add a session
+                const addSession = ([sessionKey, session]) => {
+                    // Skip sessions not matching the view mode
+                    if (viewMode === 'race' && sessionKey !== 'race') return '';
+                    if (viewMode === 'quali' && sessionKey !== 'qualifying' && sessionKey !== 'race') return '';
+                    if (viewMode === 'sprint' && !race.hasSprint) return '';
+
+                    const sessionDate = new Date(`${session.date} ${session.time} UTC`);
+
+                    const sessionTimeUser = new Date(sessionDate.toLocaleString('en-US', { timeZone: timezone }));
+                    const formattedDate = formatDate(sessionTimeUser);
+                    const formattedTime = formatTime(sessionTimeUser, timeFormat);
+                    const isPast = sessionDate < now;
+
+                    return `
+                <div class="session">
+                  <div class="session-title">${getSessionName(sessionKey)}</div>
+                  <div class="session-time" style="${isPast ? 'opacity: 0.6;' : ''}">${formattedDate}, ${formattedTime}</div>
+                </div>
+              `;
+                };
+
+                // Add sessions in order
+                sessions.forEach(([sessionKey, session]) => {
+                    cardContent += addSession([sessionKey, session]);
+                });
+
+                // Add race info
+                cardContent += `
+              <div class="race-info">
+                <p><strong>Circuit:</strong> ${race.circuit}</p>
+                <p><strong>Location:</strong> ${race.location}, ${race.country}</p>
+              </div>
+              <button class="collapse-btn" data-action="collapse">Show less</button>
+            `;
+
+                // Close content div
+                cardContent += `</div>`;
+
+                // Set the innerHTML of the card
+                raceCard.innerHTML = cardContent;
+
+                // Add the card to the grid
+                raceGrid.appendChild(raceCard);
+            });
+
+            // Add event listeners to collapse buttons
+            document.querySelectorAll('.collapse-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const card = button.closest('.race-card');
+                    card.classList.toggle('collapsed');
+                    button.textContent = card.classList.contains('collapsed') ? 'Show more' : 'Show less';
+                });
+            });
+        }
+
+        // Function to handle tab clicks
+        function setupTabs() {
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+
+                    // Add active class to clicked tab
+                    tab.classList.add('active');
+
+                    // Update race times
+                    updateRaceTimes();
+                });
+            });
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            populateTimezones();
+            setupTabs();
+            updateRaceTimes();
+
+            // Add event listeners
+            document.getElementById('timezone').addEventListener('change', updateRaceTimes);
+            document.getElementById('timeFormat').addEventListener('change', updateRaceTimes);
+            document.getElementById('view').addEventListener('change', updateRaceTimes);
+            document.getElementById('searchFilter').addEventListener('input', updateRaceTimes);
+        });
+    </script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 2025 Calendar - Timezone Converter</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #e10600;
+            margin-bottom: 10px;
+        }
+
+        .settings {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .setting-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        select,
+        input {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .race-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .race-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .race-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .race-header {
+            background-color: #e10600;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .race-content {
+            padding: 15px;
+        }
+
+        .race-date {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .race-time {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .race-info {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .race-card.next-race {
+            border: 2px solid #e10600;
+        }
+
+        .next-race-badge {
+            background-color: #e10600;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .flag {
+            width: 30px;
+            height: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 768px) {
+            .race-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Formula 1 2025 Calendar</h1>
+        <p>View all F1 race times in your local timezone</p>
+    </header>
+
+    <div class="settings">
+        <div class="setting-group">
+            <label for="timezone">Your Timezone:</label>
+            <select id="timezone">
+            </select>
+        </div>
+
+        <div class="setting-group">
+            <label for="timeFormat">Time Format:</label>
+            <select id="timeFormat">
+                <option value="12">12-hour (AM/PM)</option>
+                <option value="24">24-hour</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="race-grid" id="raceGrid">
+    </div>
+
+    <script>
+        // F1 2025 Calendar data - races typically start at 14:00 or 15:00 local time
+        // Based on typical F1 scheduling patterns and the 2024 calendar
+        const f1Calendar = [
+            {
+                name: "Australian Grand Prix",
+                location: "Melbourne",
+                country: "Australia",
+                date: "March 16, 2025",
+                time: "05:00", // UTC time
+                circuit: "Albert Park Circuit",
+                timezone: "Australia/Melbourne"
+            },
+            {
+                name: "Chinese Grand Prix",
+                location: "Shanghai",
+                country: "China",
+                date: "April 6, 2025",
+                time: "07:00", // UTC time
+                circuit: "Shanghai International Circuit",
+                timezone: "Asia/Shanghai"
+            },
+            {
+                name: "Miami Grand Prix",
+                location: "Miami",
+                country: "United States",
+                date: "May 4, 2025",
+                time: "19:00", // UTC time
+                circuit: "Miami International Autodrome",
+                timezone: "America/New_York"
+            },
+            {
+                name: "Emilia Romagna Grand Prix",
+                location: "Imola",
+                country: "Italy",
+                date: "May 18, 2025",
+                time: "13:00", // UTC time
+                circuit: "Autodromo Enzo e Dino Ferrari",
+                timezone: "Europe/Rome"
+            },
+            {
+                name: "Monaco Grand Prix",
+                location: "Monte Carlo",
+                country: "Monaco",
+                date: "May 25, 2025",
+                time: "13:00", // UTC time
+                circuit: "Circuit de Monaco",
+                timezone: "Europe/Monaco"
+            },
+            {
+                name: "Canadian Grand Prix",
+                location: "Montreal",
+                country: "Canada",
+                date: "June 8, 2025",
+                time: "18:00", // UTC time
+                circuit: "Circuit Gilles Villeneuve",
+                timezone: "America/Montreal"
+            },
+            {
+                name: "Spanish Grand Prix",
+                location: "Barcelona",
+                country: "Spain",
+                date: "June 22, 2025",
+                time: "13:00", // UTC time
+                circuit: "Circuit de Barcelona-Catalunya",
+                timezone: "Europe/Madrid"
+            },
+            {
+                name: "Austrian Grand Prix",
+                location: "Spielberg",
+                country: "Austria",
+                date: "July 6, 2025",
+                time: "13:00", // UTC time
+                circuit: "Red Bull Ring",
+                timezone: "Europe/Vienna"
+            },
+            {
+                name: "British Grand Prix",
+                location: "Silverstone",
+                country: "United Kingdom",
+                date: "July 20, 2025",
+                time: "14:00", // UTC time
+                circuit: "Silverstone Circuit",
+                timezone: "Europe/London"
+            },
+            {
+                name: "Hungarian Grand Prix",
+                location: "Budapest",
+                country: "Hungary",
+                date: "August 3, 2025",
+                time: "13:00", // UTC time
+                circuit: "Hungaroring",
+                timezone: "Europe/Budapest"
+            },
+            {
+                name: "Belgian Grand Prix",
+                location: "Spa",
+                country: "Belgium",
+                date: "August 31, 2025",
+                time: "13:00", // UTC time
+                circuit: "Circuit de Spa-Francorchamps",
+                timezone: "Europe/Brussels"
+            },
+            {
+                name: "Dutch Grand Prix",
+                location: "Zandvoort",
+                country: "Netherlands",
+                date: "September 7, 2025",
+                time: "13:00", // UTC time
+                circuit: "Circuit Zandvoort",
+                timezone: "Europe/Amsterdam"
+            },
+            {
+                name: "Italian Grand Prix",
+                location: "Monza",
+                country: "Italy",
+                date: "September 14, 2025",
+                time: "13:00", // UTC time
+                circuit: "Autodromo Nazionale Monza",
+                timezone: "Europe/Rome"
+            },
+            {
+                name: "Azerbaijan Grand Prix",
+                location: "Baku",
+                country: "Azerbaijan",
+                date: "September 28, 2025",
+                time: "12:00", // UTC time
+                circuit: "Baku City Circuit",
+                timezone: "Asia/Baku"
+            },
+            {
+                name: "Singapore Grand Prix",
+                location: "Singapore",
+                country: "Singapore",
+                date: "October 5, 2025",
+                time: "12:00", // UTC time
+                circuit: "Marina Bay Street Circuit",
+                timezone: "Asia/Singapore"
+            },
+            {
+                name: "United States Grand Prix",
+                location: "Austin",
+                country: "United States",
+                date: "October 19, 2025",
+                time: "19:00", // UTC time
+                circuit: "Circuit of the Americas",
+                timezone: "America/Chicago"
+            },
+            {
+                name: "Mexico City Grand Prix",
+                location: "Mexico City",
+                country: "Mexico",
+                date: "October 26, 2025",
+                time: "20:00", // UTC time
+                circuit: "Autódromo Hermanos Rodríguez",
+                timezone: "America/Mexico_City"
+            },
+            {
+                name: "São Paulo Grand Prix",
+                location: "São Paulo",
+                country: "Brazil",
+                date: "November 9, 2025",
+                time: "17:00", // UTC time
+                circuit: "Autódromo José Carlos Pace",
+                timezone: "America/Sao_Paulo"
+            },
+            {
+                name: "Las Vegas Grand Prix",
+                location: "Las Vegas",
+                country: "United States",
+                date: "November 23, 2025",
+                time: "06:00", // UTC time
+                circuit: "Las Vegas Strip Circuit",
+                timezone: "America/Los_Angeles"
+            },
+            {
+                name: "Qatar Grand Prix",
+                location: "Lusail",
+                country: "Qatar",
+                date: "December 7, 2025",
+                time: "15:00", // UTC time
+                circuit: "Lusail International Circuit",
+                timezone: "Asia/Qatar"
+            },
+            {
+                name: "Abu Dhabi Grand Prix",
+                location: "Abu Dhabi",
+                country: "UAE",
+                date: "December 14, 2025",
+                time: "13:00", // UTC time
+                circuit: "Yas Marina Circuit",
+                timezone: "Asia/Dubai"
+            }
+        ];
+
+        // Function to populate the timezone dropdown
+        function populateTimezones() {
+            const timezoneSelect = document.getElementById('timezone');
+            const timezones = Intl.supportedValuesOf('timeZone');
+
+            // Get user's timezone
+            const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+            // Add option groups by continent
+            const continents = {};
+
+            timezones.forEach(timezone => {
+                const continent = timezone.split('/')[0];
+                if (!continents[continent]) {
+                    continents[continent] = [];
+                }
+                continents[continent].push(timezone);
+            });
+
+            // Sort continents
+            const sortedContinents = Object.keys(continents).sort();
+
+            sortedContinents.forEach(continent => {
+                const optgroup = document.createElement('optgroup');
+                optgroup.label = continent;
+
+                continents[continent].sort().forEach(timezone => {
+                    const option = document.createElement('option');
+                    option.value = timezone;
+                    option.textContent = timezone.replace('_', ' ');
+                    if (timezone === userTimezone) {
+                        option.selected = true;
+                    }
+                    optgroup.appendChild(option);
+                });
+
+                timezoneSelect.appendChild(optgroup);
+            });
+        }
+
+        // Function to format time based on user preference
+        function formatTime(date, format) {
+            const hours = date.getHours();
+            const minutes = date.getMinutes();
+
+            if (format === '12') {
+                const period = hours >= 12 ? 'PM' : 'AM';
+                const displayHours = hours % 12 || 12;
+                return `${displayHours}:${minutes.toString().padStart(2, '0')} ${period}`;
+            } else {
+                return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+            }
+        }
+
+        // Function to format date
+        function formatDate(date) {
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString(undefined, options);
+        }
+
+        // Function to update race times based on selected timezone
+        function updateRaceTimes() {
+            const timezone = document.getElementById('timezone').value;
+            const timeFormat = document.getElementById('timeFormat').value;
+            const raceGrid = document.getElementById('raceGrid');
+
+            // Clear existing race cards
+            raceGrid.innerHTML = '';
+
+            // Get current date for highlighting the next race
+            const now = new Date();
+            let nextRaceIndex = -1;
+
+            // Find the next race
+            for (let i = 0; i < f1Calendar.length; i++) {
+                const raceDate = new Date(`${f1Calendar[i].date} ${f1Calendar[i].time} UTC`);
+                if (raceDate > now) {
+                    nextRaceIndex = i;
+                    break;
+                }
+            }
+
+            // Create race cards
+            f1Calendar.forEach((race, index) => {
+                // Parse UTC race time
+                const raceTimeUTC = new Date(`${race.date} ${race.time} UTC`);
+
+                // Format the date and time in the user's timezone
+                const raceTimeUser = new Date(raceTimeUTC.toLocaleString('en-US', { timeZone: timezone }));
+                const formattedDate = formatDate(raceTimeUser);
+                const formattedTime = formatTime(raceTimeUser, timeFormat);
+
+                // Create race card
+                const raceCard = document.createElement('div');
+                raceCard.className = 'race-card';
+                if (index === nextRaceIndex) {
+                    raceCard.classList.add('next-race');
+                }
+
+                // Create card content
+                raceCard.innerHTML = `
+          <div class="race-header">
+            ${race.name}
+          </div>
+          <div class="race-content">
+            ${index === nextRaceIndex ? '<div class="next-race-badge">NEXT RACE</div>' : ''}
+            <div class="race-date">${formattedDate}</div>
+            <div class="race-time">Race Start: ${formattedTime}</div>
+            <div class="race-info">
+              <p><strong>Circuit:</strong> ${race.circuit}</p>
+              <p><strong>Location:</strong> ${race.location}, ${race.country}</p>
+            </div>
+          </div>
+        `;
+
+                raceGrid.appendChild(raceCard);
+            });
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            populateTimezones();
+            updateRaceTimes();
+
+            // Add event listeners
+            document.getElementById('timezone').addEventListener('change', updateRaceTimes);
+            document.getElementById('timeFormat').addEventListener('change', updateRaceTimes);
+        });
+    </script>
+</body>
+
+</html> -->
