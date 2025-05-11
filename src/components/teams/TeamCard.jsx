@@ -6,7 +6,8 @@ export default function TeamCard({ team }) {
         <Link to={`/teams/${team.id}`}>
             <div
                 className="card hover:shadow-lg transition-shadow duration-300 rounded-2xl"
-                style={{ borderTop: `4px solid ${team.primaryColor}`, boxShadow: `0 5px 30px ${team.primaryColor}40` }}
+                style={{ borderTop: `4px solid ${team.primaryColor}`, boxShadow: `0 5px 30px #dddddd60` }}
+                // style={{ borderTop: `4px solid ${team.primaryColor}`, boxShadow: `0 5px 30px ${team.primaryColor}40` }}
             >
                 <div className="p-5">
                     <div className="flex items-center justify-between mb-4">
