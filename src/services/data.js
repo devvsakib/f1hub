@@ -855,7 +855,7 @@ export const getDrivers = () => {
 };
 
 export const getDriver = (driverId) => {
-    const driver = drivers.find(driver => driver.id === driverId);
+    const driver = drivers.find(driver => driver.name === driverId);
     return Promise.resolve(driver);
 };
 

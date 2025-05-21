@@ -13,6 +13,7 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Teams', path: '/teams', icon: <Users size={20} /> },
     { name: 'Drivers', path: '/drivers', icon: <Flag size={20} /> },
+    { name: 'Standings', path: '/standings', icon: <Flag size={20} /> },
     { name: 'Car Gallery', path: '/gallery', icon: <Car size={20} /> },
     { name: 'Circuits', path: '/circuits', icon: <Flag size={20} /> },
     { name: 'Reaction Game', path: '/games/reaction', icon: <Trophy size={20} /> }

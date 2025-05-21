@@ -6,7 +6,7 @@ export default function DriverCard({ driver }) {
     const team = teams.find(team => team.id === driver.teamId);
 
     return (
-        <Link to={`/drivers/${driver.id}`}>
+        <Link to={`/drivers/${driver.name}`}>
             <div
                 className="card hover:shadow-lg transition-shadow duration-300 rounded-2xl"
                 style={{ borderLeft: `4px solid ${team?.primaryColor || '#ccc'}` }}
