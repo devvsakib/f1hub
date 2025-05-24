@@ -268,7 +268,7 @@ const Standings = () => {
                                 <div className="overflow-x-auto">
                                     <div className="space-y-2 p-6">
                                         {constructorsStandings?.standings?.entries?.map((team, index) => {
-                                            const  = parseInt(team.stats[0]?.value || index + 1);
+                                            const position = parseInt(team.stats[0]?.value || index + 1);
                                             return (
                                                 <div
                                                     key={position || index}
