@@ -20,6 +20,7 @@ const CircuitsList = lazy(() => import('../components/circuits/CircuitsList'));
 const CircuitDetail = lazy(() => import('../components/circuits/CircuitDetail'));
 const Calendar = lazy(() => import('../pages/Calendar'));
 const Standings = lazy(() => import('../pages/Standings'));
+const Live = lazy(() => import('../pages/Live'));
 
 // Loading fallback
 const PageLoader = () => (
@@ -156,6 +157,16 @@ const router = createBrowserRouter([
                     </Suspense>
                 )
             },
+            
+            {
+                path: 'live',
+                element: (
+                    <Suspense fallback={<PageLoader />}>
+                        <Live />
+                    </Suspense>
+                )
+            },
+
         ],
     },
 ]);

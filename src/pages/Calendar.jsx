@@ -85,7 +85,7 @@ const Calendar = () => {
             name: 'Emilia Romagna Grand Prix',
             circuit: 'Autodromo Enzo e Dino Ferrari',
             location: 'Imola, Italy',
-            date: 'May 28, 2025',
+            date: 'May 7, 2025',
             status: 'upcoming',
             time: '14:00 UTC',
             flagCode: 'IT',
@@ -96,7 +96,7 @@ const Calendar = () => {
             name: 'Monaco Grand Prix',
             circuit: 'Circuit de Monaco',
             location: 'Monte Carlo, Monaco',
-            date: 'June 11, 2025',
+            date: 'May 25, 2025',
             status: 'upcoming',
             time: '14:00 UTC',
             flagCode: 'MC',
@@ -148,10 +148,22 @@ const Calendar = () => {
         }
     ];
 
-    // Filter races based on status
-    const completedRaces = races.filter(race => race.status === 'completed');
-    const upcomingRaces = races.filter(race => race.status === 'upcoming');
+    const getRaceStatus = (dateStr, timeStr = '00:00 UTC') => {
+        const raceDateTime = new Date(`${dateStr} ${timeStr}`);
+        const now = new Date();
+        return now > raceDateTime ? 'completed' : 'upcoming';
+    };
+
+    const racesWithStatus = races.map(race => ({
+        ...race,
+        status: getRaceStatus(race.date, race.time),
+    }));
+
+    const completedRaces = racesWithStatus.filter(r => r.status === 'completed');
+    const upcomingRaces = racesWithStatus.filter(r => r.status === 'upcoming');
     const nextRace = upcomingRaces[0];
+
+
 
     // Tabs state
     const [activeTab, setActiveTab] = useState('all');
@@ -164,9 +176,12 @@ const Calendar = () => {
             case 'upcoming':
                 return upcomingRaces;
             default:
-                return races;
+                return racesWithStatus;
         }
     };
+
+
+
 
     return (
         <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
@@ -231,8 +246,8 @@ const Calendar = () => {
                 <button
                     onClick={() => setActiveTab('all')}
                     className={`px-4 py-2 rounded-lg font-medium ${activeTab === 'all'
-                            ? isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-gray-900'
-                            : isDarkMode ? 'text-gray-300 hover:bg-gray-800' : 'text-gray-700 hover:bg-gray-100'
+                        ? isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-gray-900'
+                        : isDarkMode ? 'text-gray-300 hover:bg-gray-800' : 'text-gray-700 hover:bg-gray-100'
                         }`}
                 >
                     All Races
@@ -240,8 +255,8 @@ const Calendar = () => {
                 <button
                     onClick={() => setActiveTab('completed')}
                     className={`px-4 py-2 rounded-lg font-medium ${activeTab === 'completed'
-                            ? isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-gray-900'
-                            : isDarkMode ? 'text-gray-300 hover:bg-gray-800' : 'text-gray-700 hover:bg-gray-100'
+                        ? isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-gray-900'
+                        : isDarkMode ? 'text-gray-300 hover:bg-gray-800' : 'text-gray-700 hover:bg-gray-100'
                         }`}
                 >
                     Completed ({completedRaces.length})
@@ -249,8 +264,8 @@ const Calendar = () => {
                 <button
                     onClick={() => setActiveTab('upcoming')}
                     className={`px-4 py-2 rounded-lg font-medium ${activeTab === 'upcoming'
-                            ? isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-gray-900'
-                            : isDarkMode ? 'text-gray-300 hover:bg-gray-800' : 'text-gray-700 hover:bg-gray-100'
+                        ? isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-gray-900'
+                        : isDarkMode ? 'text-gray-300 hover:bg-gray-800' : 'text-gray-700 hover:bg-gray-100'
                         }`}
                 >
                     Upcoming ({upcomingRaces.length})
@@ -266,8 +281,8 @@ const Calendar = () => {
                     >
                         <div className="relative">
                             <div className={`absolute top-0 left-0 px-3 py-1 ${race.status === 'completed'
-                                    ? 'bg-green-600'
-                                    : 'bg-blue-600'
+                                ? 'bg-green-600'
+                                : 'bg-blue-600'
                                 } text-white text-sm font-semibold rounded-br-lg`}>
                                 {race.status === 'completed' ? 'COMPLETED' : 'UPCOMING'}
                             </div>

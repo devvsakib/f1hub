@@ -1,14 +1,12 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Menu, X, Flag, Users, Car, Trophy, Moon, Sun } from 'lucide-react';
+import { useTheme } from '../../hooks/Theme';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { toggleTheme, isDarkMode } = useTheme(); // Assuming useTheme is defined in your hooks
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
 
   const navLinks = [
     { name: 'Teams', path: '/teams', icon: <Users size={20} /> },
@@ -20,7 +18,9 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-f1-black text-white">
+    <nav className={`bg-f1-black text-white ${isDarkMode
+      ? 'bg-slate-900/80' : 'bg-white/80'
+      }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">

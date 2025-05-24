@@ -102,7 +102,7 @@ export const teams1 = [
         bio: "BWT Alpine F1 Team is a French Formula One racing team, competing since 2021 as a rebrand of Renault. The team focuses on performance and innovation with a blend of French engineering and British technical excellence."
     },
     {
-        id: "kicksauber",
+        id: "sauber",
         name: "Kick Sauber",
         fullName: "Stake F1 Team Kick Sauber",
         base: "Hinwil, Switzerland",
@@ -137,8 +137,8 @@ export const teams1 = [
         teamPrincipal: "Mike Krack",
         founded: 2021,
 
-        logo: "/assets/teams/aston-martin-logo.png",
-        carImageUrl: "/assets/cars/aston-martin.png",
+        logo: "/assets/teams/astonmartin-logo.png",
+        carImageUrl: "/assets/cars/astonmartin.png",
         primaryColor: "#00665E",
         secondaryColor: "#F5D547",
         bio: "Aston Martin Aramco F1 Team is a British Formula One team with a legacy rooted in performance and luxury. Re-entering the sport in 2021, Aston Martin has quickly become a serious contender on the grid."
@@ -236,7 +236,7 @@ export const teams = [
         "bio": "Oracle Red Bull Racing is one of the most successful teams of recent years, having won the Constructors' Championship in multiple seasons. The team is known for its aggressive development and innovative car designs."
     },
     {
-        "id": "racing_bulls",
+        "id": "racingbulls",
         "full_team_name": "Visa Cash App Racing Bulls Formula One Team",
         "base": "Faenza, Italy",
         "team_chief": "Laurent Mekies",
@@ -276,7 +276,7 @@ export const teams = [
         "bio": "McLaren Racing Limited is a British motor racing team based at the McLaren Technology Centre in Woking, Surrey, England. Founded by New Zealander Bruce McLaren in 1966, the team has been one of the most successful in Formula One."
     },
     {
-        "id": "aston-martin",
+        "id": "astonmartin",
         "full_team_name": "Aston Martin Aramco Formula One Team",
         "base": "Silverstone, United Kingdom",
         "team_chief": "Andy Cowell",
@@ -289,8 +289,8 @@ export const teams = [
         "pole_positions": "1",
         "fastest_laps": "3",
         "name": "Aston Martin",
-        "logo": "/assets/teams/aston-martin-logo.png",
-        "carImageUrl": "/assets/cars/aston-martin.png",
+        "logo": "/assets/teams/astonmartin-logo.png",
+        "carImageUrl": "/assets/cars/astonmartin.png",
         "primaryColor": "#00665E",
         "secondaryColor": "#F5D547",
         "bio": "Aston Martin Aramco F1 Team is a British Formula One team with a legacy rooted in performance and luxury. Re-entering the sport in 2021, Aston Martin has quickly become a serious contender on the grid."
@@ -356,7 +356,7 @@ export const teams = [
         "bio": "Atlassian Williams Racing is a British Formula One team based in Grove, Oxfordshire. With a rich history of championship wins, Williams remains an iconic team in the sport, focusing on building towards a stronger future in Formula One."
     },
     {
-        id: "kicksauber",
+        id: "sauber",
         name: "Kick Sauber",
         full_team_name: "Stake F1 Team Kick Sauber",
         base: "Hinwil, Switzerland",
@@ -564,27 +564,27 @@ export const drivers = [
         bio: "Oscar Piastri is an Australian racing driver currently competing in Formula One for McLaren. Piastri is the 2019 Formula Renault Eurocup champion, the 2020 FIA Formula 3 champion, and the 2021 Formula 2 champion."
     },
     {
-        id: "doohan",
-        name: "Jack Doohan",
+        id: "franco",
+        name: "Franco Colapinto",
         number: 21,
-        nationality: "Australian",
+        nationality: "Argentine",
         teamId: "alpine",
-        imageUrl: "/assets/drivers/jack-doohan.png",
-        helmet: "/assets/helmets/doohan-helmet.png",
+        imageUrl: "/assets/drivers/franco-colapinto.png",
+        // helmet: "/assets/helmets/doohan-helmet.png",
         team: "Alpine",
         country: "Australia",
-        podiums: "0",
-        points: "0",
-        grands_prix_entered: "5",
-        world_championships: "0",
-        highest_race_finish: "13 (x1)",
-        highest_grid_position: "11",
-        date_of_birth: "20/01/2003",
-        place_of_birth: "Gold Coast, Australia",
+        podiums: 0,
+        points: 5,
+        grands_prix_entered: 11,
+        world_championships: 0,
+        highest_race_finish: "8 (x1)",
+        highest_grid_position: "8",
+        date_of_birth: "27/05/2003",
+        place_of_birth: "Buenos Aires, Argentina",
         poles: 0,
         wins: 0,
         fastestLaps: 0,
-        bio: "Jack Doohan is an Australian Formula One driver for Alpine. Son of motorcycle legend Mick Doohan, Jack brings speed and composure to the grid, representing the next generation of racing talent."
+        bio: "He may have only contested a handful of Grands Prix, but Alpine racer Franco Colapinto has already made quite a name for himself in Formula 1, having not once but twice been drafted in mid-season to replace a struggling team mate."
     },
     {
         id: "gasly",
@@ -614,7 +614,7 @@ export const drivers = [
         name: "Fernando Alonso",
         number: 14,
         nationality: "Spanish",
-        teamId: "aston-martin",
+        teamId: "astonmartin",
         imageUrl: "/assets/drivers/fernando-alonso.png",
         helmet: "/assets/helmets/alonso-helmet.png",
         team: "Aston Martin",
@@ -637,7 +637,7 @@ export const drivers = [
         name: "Lance Stroll",
         number: 18,
         nationality: "Canadian",
-        teamId: "aston-martin",
+        teamId: "astonmartin",
         imageUrl: "/assets/drivers/lance-stroll.png",
         helmet: "/assets/helmets/stroll-helmet.png",
         team: "Aston Martin",
@@ -706,7 +706,7 @@ export const drivers = [
         name: "Isack Hadjar",
         number: 6,
         nationality: "French",
-        teamId: "racing_bulls",
+        teamId: "racingbulls",
         imageUrl: "/assets/drivers/isack-hadjar.png",
         helmet: "/assets/helmets/hadjar-helmet.png",
         team: "Racing Bulls",
@@ -729,7 +729,7 @@ export const drivers = [
         name: "Liam Lawson",
         number: 30,
         nationality: "New Zealander",
-        teamId: "racing_bulls",
+        teamId: "racingbulls",
         imageUrl: "/assets/drivers/liam-lawson.png",
         helmet: "/assets/helmets/lawson-helmet.png",
         team: "Racing Bulls",
@@ -798,8 +798,8 @@ export const drivers = [
         name: "Nico Hülkenberg",
         number: 27,
         nationality: "German",
-        teamId: "kicksauber",
-        imageUrl: "/assets/drivers/nico-hulkenberg.png",
+        teamId: "sauber",
+        imageUrl: "/assets/drivers/nico-hülkenberg.png",
         helmet: "/assets/helmets/hulkenberg-helmet.png",
         team: "Kick Sauber",
         country: "Germany",
@@ -821,7 +821,7 @@ export const drivers = [
         name: "Gabriel Bortoleto",
         number: 5,
         nationality: "Brazilian",
-        teamId: "kicksauber",
+        teamId: "sauber",
         imageUrl: "/assets/drivers/gabriel-bortoleto.png",
         helmet: "/assets/helmets/bortoleto-helmet.png",
         team: "Kick Sauber",
@@ -868,7 +868,7 @@ export async function getCircuits(season = '2024') {
     const res = await fetch(`https://ergast.com/api/f1/${season}/circuits.json`);
     const data = await res.json();
     const circuits = data.MRData.CircuitTable.Circuits;
-console.log(circuits, "circuits data", data.MRData.CircuitTable.Circuits.length)
+    console.log(circuits, "circuits data", data.MRData.CircuitTable.Circuits.length)
     const enrichedCircuits = await Promise.all(
         circuits.map(async (circuit) => {
             const wikiTitle = circuit.url.split('/').pop();
@@ -896,11 +896,11 @@ export async function getCircuit(circuitId) {
     const data = await res.json();
     const circuit = data.MRData.CircuitTable.Circuits[0];
     const wikiTitle = circuit.url.split('/').pop();
-    
+
     try {
         const wikiRes = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${wikiTitle}`);
         const wikiData = await wikiRes.json();
-        
+
         return {
             ...circuit,
             thumbnail: wikiData.originalimage?.source || null,

@@ -1,33 +1,19 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useOutletContext } from 'react-router-dom';
 import { Menu, X, Users, Target, Camera, Car, Flag, Trophy, ChevronRight, Clock, Calendar, Sun, Moon } from 'lucide-react';
 import GetImage from '../components/common/GetImage';
+import { useTheme } from '../hooks/Theme';
 
 const Home = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { driversStandings, constructorsStandings, loading } = useOutletContext();
+  const { isDarkMode } = useTheme(false);
 
-  // Featured drivers data
-  const featuredDrivers = [
-    { id: 1, name: 'Max Verstappen', team: 'Red Bull Racing', position: '1st', points: 342, image: '/api/placeholder/80/80' },
-    { id: 2, name: 'Lando Norris', team: 'McLaren', position: '2nd', points: 301, image: '/api/placeholder/80/80' },
-    { id: 3, name: 'Charles Leclerc', team: 'Ferrari', position: '3rd', points: 275, image: '/api/placeholder/80/80' }
-  ];
-
-  // Next race data
   const nextRace = {
-    name: 'Abu Dhabi Grand Prix',
-    circuit: 'Yas Marina Circuit',
-    date: 'Nov 28, 2025',
-    time: '14:00 UTC'
+    name: 'Monaco Grand Prix',
+    circuit: 'Circuit de Monaco',
+    date: 'May 25, 2025',
+    time: '15:00 UTC'
   };
-
-  // Team standings data
-  const teamStandings = [
-    { position: 1, name: 'Red Bull Racing', points: 583 },
-    { position: 2, name: 'McLaren', points: 532 },
-    { position: 3, name: 'Ferrari', points: 512 },
-    { position: 4, name: 'Mercedes', points: 389 }
-  ];
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900 text-gray-100' : 'bg-gray-50 text-gray-900'}`}>
@@ -89,20 +75,20 @@ const Home = () => {
                 <Trophy className={`${isDarkMode ? 'text-red-500' : 'text-red-600'}`} />
               </div>
               <div className="space-y-4">
-                {featuredDrivers.map((driver) => (
+                {driversStandings?.standings?.entries?.slice(0, 3)?.map((driver) => (
                   <div key={driver.id} className="flex items-center justify-between">
                     <div className="flex items-center">
                       <div className="mr-3 w-8 h-8 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
-                      <GetImage data={driver} type='drivers' />
+                        <GetImage data={driver.athlete} />
                       </div>
                       <div>
-                        <p className="font-semibold">{driver.name}</p>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{driver.team}</p>
+                        <p className="font-semibold">{driver.athlete.name}</p>
+                        {/* <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{driver.team.name}</p> */}
                       </div>
                     </div>
                     <div className="text-right">
-                      <p className={`font-bold ${isDarkMode ? 'text-red-500' : 'text-red-600'}`}>{driver.position}</p>
-                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{driver.points} pts</p>
+                      <p className={`font-bold ${isDarkMode ? 'text-red-500' : 'text-red-600'}`}>{driver.stats[0]?.value}</p>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{driver.stats[1]?.value} pts</p>
                     </div>
                   </div>
                 ))}
@@ -121,19 +107,29 @@ const Home = () => {
                 <Car className={`${isDarkMode ? 'text-red-500' : 'text-red-600'}`} />
               </div>
               <div className="space-y-4">
-                {teamStandings.map((team) => (
+                {constructorsStandings?.standings?.entries?.slice(0, 3)?.map((team) => (
                   <div key={team.position} className="flex items-center justify-between">
                     <div className="flex items-center">
                       <div className={`mr-3 w-8 h-8 flex items-center justify-center rounded-full ${team.name === 'Red Bull Racing' ? 'bg-blue-600' :
-                        team.name === 'McLaren' ? 'bg-orange-500' :
-                          team.name === 'Ferrari' ? 'bg-red-600' : 'bg-cyan-600'
+                        team.team.name === 'McLaren' ? 'bg-orange-500' :
+                          team.team.name === 'Ferrari' ? 'bg-red-600' : 'bg-cyan-600'
                         }`}>
-                        <span className="text-white font-bold text-sm">{team.position}</span>
+                        <span className="text-white font-bold text-sm">{team.stats[0]?.value}</span>
                       </div>
-                      <span className="font-semibold">{team.name}</span>
-                      <GetImage data={team.name === 'Red Bull Racing' ? {...team, name: 'red-bull'} : team} type='team' />
+                      <div className='flex items-center gap-2'>
+                        <span className="font-semibold">{team.team.name}</span>
+                        {/* <GetImage data={team.name === 'Red Bull Racing' ? { ...team, name: 'red-bull' } : team} type='team' /> */}
+                        <GetImage
+                          type="team"
+                          data={['Haas F1 Team', 'Alpine F1 Team', 'RB F1 Team', 'Sauber'].includes(team.team.name)
+                            ? { ...team, name: teamName(team.team.name) }
+                            : team.team
+                          }
+                          className="w-8 h-auto object-cover"
+                        />
+                      </div>
                     </div>
-                    <span className="font-bold">{team.points} pts</span>
+                    <span className="font-bold">{team.stats[1]?.value} pts</span>
                   </div>
                 ))}
               </div>
