@@ -62,7 +62,7 @@ export const teams1 = [
     {
         id: "redbull",
         name: "Red Bull",
-        fullName: "Oracle Red Bull Racing",
+        fullName: "Oracle Red Bull",
         base: "Milton Keynes, United Kingdom",
         teamPrincipal: "Christian Horner",
         founded: 2005,
@@ -71,7 +71,7 @@ export const teams1 = [
         carImageUrl: "/assets/cars/redbull.png",
         primaryColor: "#0600EF",
         secondaryColor: "#FFD700",
-        bio: "Oracle Red Bull Racing is one of the most successful teams of recent years, having won the Constructors' Championship in multiple seasons. The team is known for its aggressive development and innovative car designs."
+        bio: "Oracle Red Bull is one of the most successful teams of recent years, having won the Constructors' Championship in multiple seasons. The team is known for its aggressive development and innovative car designs."
     },
     {
         id: "mclaren",
@@ -127,7 +127,7 @@ export const teams1 = [
         carImageUrl: "/assets/cars/racing-bulls.png",
         primaryColor: "#2B2D42",
         secondaryColor: "#F72585",
-        bio: "Visa Cash App RB F1 Team, previously known as AlphaTauri, serves as Red Bull Racing's sister team. Based in Faenza, it focuses on nurturing young talent and contributing to Red Bull's broader motorsport strategy."
+        bio: "Visa Cash App RB F1 Team, previously known as AlphaTauri, serves as Red Bull's sister team. Based in Faenza, it focuses on nurturing young talent and contributing to Red Bull's broader motorsport strategy."
     },
     {
         id: "astonmartin",
@@ -193,6 +193,7 @@ export const teams = [
         "carImageUrl": "/assets/cars/mercedes.png",
         "primaryColor": "#00A19C",
         "secondaryColor": "#000",
+        "drivers": ["George Russell", "Kimi Antonelli"],
         "bio": "Mercedes-AMG Petronas F1 Team, previously known as Mercedes GP, is a German Formula One racing team and constructor. The team is based in Brackley, England, and competes under a German license."
     },
     {
@@ -213,11 +214,12 @@ export const teams = [
         "carImageUrl": "/assets/cars/ferrari.png",
         "primaryColor": "#DC0000",
         "secondaryColor": "#fff",
+        "drivers": ["Lewis Hamilton", "Charles Leclerc"],
         "bio": "Scuderia Ferrari is the oldest surviving and most successful Formula One team. The team has competed in every world championship since the 1950 Formula One season and is the most successful Formula One team, with 16 Constructors' Championships."
     },
     {
         "id": "redbull",
-        "full_team_name": "Oracle Red Bull Racing",
+        "full_team_name": "Oracle Red Bull",
         "base": "Milton Keynes, United Kingdom",
         "team_chief": "Christian Horner",
         "technical_chief": "Pierre Waché",
@@ -233,7 +235,8 @@ export const teams = [
         "carImageUrl": "/assets/cars/redbull.png",
         "primaryColor": "#0600EF",
         "secondaryColor": "#FFD700",
-        "bio": "Oracle Red Bull Racing is one of the most successful teams of recent years, having won the Constructors' Championship in multiple seasons. The team is known for its aggressive development and innovative car designs."
+        "drivers": ["Max Verstappen", "Yuki Tsunoda"],
+        "bio": "Oracle Red Bull is one of the most successful teams of recent years, having won the Constructors' Championship in multiple seasons. The team is known for its aggressive development and innovative car designs."
     },
     {
         "id": "racingbulls",
@@ -251,9 +254,10 @@ export const teams = [
         "name": "Racing Bulls",
         "logo": "/assets/teams/racing-bulls-logo.png",
         "carImageUrl": "/assets/cars/racing-bulls.png",
-        "primaryColor": "#2B2D42",
+        "primaryColor": "#ffffff",
         "secondaryColor": "#F72585",
-        "bio": "Visa Cash App RB F1 Team, previously known as AlphaTauri, serves as Red Bull Racing's sister team. Based in Faenza, it focuses on nurturing young talent and contributing to Red Bull's broader motorsport strategy."
+        "drivers": ["Isack Hadjar", "Liam Lawson"],
+        "bio": "Visa Cash App RB F1 Team, previously known as AlphaTauri, serves as Red Bull's sister team. Based in Faenza, it focuses on nurturing young talent and contributing to Red Bull's broader motorsport strategy."
     },
     {
         "id": "mclaren",
@@ -273,6 +277,7 @@ export const teams = [
         "carImageUrl": "/assets/cars/mclaren.png",
         "primaryColor": "#FF8700",
         "secondaryColor": "#0090D0",
+        "drivers": ["Lando Norris", "Oscar Piastri"],
         "bio": "McLaren Racing Limited is a British motor racing team based at the McLaren Technology Centre in Woking, Surrey, England. Founded by New Zealander Bruce McLaren in 1966, the team has been one of the most successful in Formula One."
     },
     {
@@ -293,6 +298,7 @@ export const teams = [
         "carImageUrl": "/assets/cars/astonmartin.png",
         "primaryColor": "#00665E",
         "secondaryColor": "#F5D547",
+        "drivers": ["Lance Stroll", "Fernando Alonso"],
         "bio": "Aston Martin Aramco F1 Team is a British Formula One team with a legacy rooted in performance and luxury. Re-entering the sport in 2021, Aston Martin has quickly become a serious contender on the grid."
     },
     {
@@ -311,8 +317,9 @@ export const teams = [
         "name": "Alpine",
         "logo": "/assets/teams/alpine-logo.png",
         "carImageUrl": "/assets/cars/alpine.png",
-        "primaryColor": "#0090FF",
-        "secondaryColor": "#FF4FA0",
+        "primaryColor": "#FF4FA0",
+        "secondaryColor": "#0090FF",
+        "drivers": ["Franco Colapinto", "Pierre Gasly", "Jack Doohan"],
         "bio": "BWT Alpine F1 Team is a French Formula One racing team, competing since 2021 as a rebrand of Renault. The team focuses on performance and innovation with a blend of French engineering and British technical excellence."
     },
     {
@@ -333,6 +340,7 @@ export const teams = [
         "carImageUrl": "/assets/cars/haas.png",
         "primaryColor": "#B6BABD",
         "secondaryColor": "#1D1D1B",
+        "drivers": ["Esteban Ocon", "Oliver Bearman"],
         "bio": "The MoneyGram Haas F1 Team is the only American-based team in Formula One. Founded by Gene Haas in 2016, the team has steadily developed its presence in the sport with a focus on engineering partnerships and innovation."
     },
     {
@@ -353,6 +361,7 @@ export const teams = [
         "carImageUrl": "/assets/cars/williams.png",
         "primaryColor": "#005BAB",
         "secondaryColor": "#F2F3F6",
+        "drivers": ["Alexander Albon", "Carlos Sainz"],
         "bio": "Atlassian Williams Racing is a British Formula One team based in Grove, Oxfordshire. With a rich history of championship wins, Williams remains an iconic team in the sport, focusing on building towards a stronger future in Formula One."
     },
     {
@@ -371,6 +380,7 @@ export const teams = [
         carImageUrl: "/assets/cars/kick-sauber.png",
         primaryColor: "#00E701",
         secondaryColor: "#000000",
+        drivers: ["Nico Hülkenberg", "Gabriel Bortoleto"],
         chassis: "C45",
         power_unit: "Ferrari",
         bio: "Kick Sauber, officially known as Stake F1 Team Kick Sauber, is a Swiss-based team with a rich motorsport legacy. Formerly Alfa Romeo, the team enters a new era under the Kick and Stake branding."
@@ -479,7 +489,7 @@ export const drivers = [
         teamId: "redbull",
         imageUrl: "/assets/drivers/max-verstappen.png",
         helmet: "/assets/helmets/verstappen-helmet.png",
-        team: "Red Bull Racing",
+        team: "Red Bull",
         country: "Netherlands",
         podiums: "114",
         points: "3092.5",
@@ -492,7 +502,7 @@ export const drivers = [
         poles: 39,
         wins: 62,
         fastestLaps: 30,
-        bio: "Max Emilian Verstappen is a Belgian-Dutch racing driver and the 2021, 2022, 2023, and 2024 Formula One World Champion, currently competing under the Dutch flag for Red Bull Racing."
+        bio: "Max Emilian Verstappen is a Belgian-Dutch racing driver and the 2021, 2022, 2023, and 2024 Formula One World Champion, currently competing under the Dutch flag for Red Bull."
     },
     {
         id: "yuki",
@@ -502,7 +512,7 @@ export const drivers = [
         teamId: "redbull",
         imageUrl: "/assets/drivers/yuki-tsunoda.png",
         helmet: "/assets/helmets/yuki-helmet.png",
-        team: "Red Bull Racing",
+        team: "Red Bull",
         country: "Japan",
         podiums: "0",
         points: "96",
@@ -515,7 +525,7 @@ export const drivers = [
         poles: 2,
         wins: 0,
         fastestLaps: 0,
-        bio: "Yuki Tsunoda is a Japanese racing driver currently competing in Formula One for Red Bull Racing. He is a rising star in the sport, known for his impressive performances in junior categories."
+        bio: "Yuki Tsunoda is a Japanese racing driver currently competing in Formula One for Red Bull. He is a rising star in the sport, known for his impressive performances in junior categories."
     },
     {
         id: "norris",
@@ -745,7 +755,7 @@ export const drivers = [
         poles: 0,
         wins: 0,
         fastestLaps: 0,
-        bio: "Liam Lawson is a New Zealand racing driver currently competing in Formula One for Oracle Red Bull Racing as a reserve driver. Lawson has also competed in the DTM and Super Formula."
+        bio: "Liam Lawson is a New Zealand racing driver currently competing in Formula One for Oracle Red Bull as a reserve driver. Lawson has also competed in the DTM and Super Formula."
     },
     {
         id: "albon",
@@ -768,7 +778,7 @@ export const drivers = [
         poles: 1,
         wins: 0,
         fastestLaps: 0,
-        bio: "Alexander Albon is a Thai-British racing driver currently competing in Formula One for Williams. He previously raced for Red Bull Racing and is known for his resilience and strong performances in difficult conditions."
+        bio: "Alexander Albon is a Thai-British racing driver currently competing in Formula One for Williams. He previously raced for Red Bull and is known for his resilience and strong performances in difficult conditions."
     },
     {
         id: "sainz",

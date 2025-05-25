@@ -6,7 +6,7 @@ import { Trophy, Users, ArrowUp, ArrowDown, Minus, Crown, Medal, Award } from 'l
 import axios from 'axios';
 import GetImage from '../components/common/GetImage';
 import { useTheme } from '../hooks/Theme';
-import { drivers, getTeamDrivers } from '../services/data';
+import { drivers, getTeamDrivers, teams } from '../services/data';
 
 const Standings = () => {
     const [activeTab, setActiveTab] = useState('drivers');
@@ -84,6 +84,8 @@ const Standings = () => {
             </div>
         );
     }
+
+    const getTeamColor = driver => teams.find(team => team.drivers.includes(driver))?.primaryColor
 
     return (
         <div className={`min-h-screen ${isDarkMode
@@ -185,6 +187,7 @@ const Standings = () => {
                                                         ? 'bg-slate-800/50 border-slate-700/30 hover:border-slate-600/50 hover:bg-slate-700/50 hover:shadow-slate-900/20'
                                                         : 'bg-white/60 border-gray-200 hover:border-gray-300 hover:bg-white/80 hover:shadow-gray-500/10'
                                                         }`}
+                                                    style={{ borderLeft: `5px solid ${getTeamColor(driver.athlete.name)}` }}
                                                 >
                                                     <div className="flex items-center justify-between">
                                                         <div className="flex items-center gap-4">
@@ -192,7 +195,7 @@ const Standings = () => {
                                                             <div className={`w-12 h-12 rounded-xl ${getPositionBadgeColor(position)} flex items-center justify-center font-bold text-lg`}>
                                                                 {position <= 3 ? getPositionIcon(position) : position}
                                                             </div>
-
+                                                            {/* {console.log()} */}
                                                             {/* Driver Info */}
                                                             <div className="flex items-center gap-4">
                                                                 <div className={`w-14 h-14 rounded-full overflow-hidden border-2 shadow-lg ${isDarkMode
@@ -276,6 +279,7 @@ const Standings = () => {
                                                         ? 'bg-slate-800/50 border-slate-700/30 hover:border-slate-600/50 hover:bg-slate-700/50 hover:shadow-slate-900/20'
                                                         : 'bg-white/60 border-gray-200 hover:border-gray-300 hover:bg-white/80 hover:shadow-gray-500/10'
                                                         }`}
+                                                         style={{ borderLeft: `5px solid ${teams.find((t) => t.name === teamName(team.team.name))?.primaryColor}` }}
                                                 >
                                                     <div className="flex items-center justify-between">
                                                         <div className="flex items-center gap-4">

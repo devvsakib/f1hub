@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, Flag, Users, Car, Trophy, Moon, Sun } from 'lucide-react';
+import { Menu, X, Flag, Users, Car, Trophy, Moon, Sun, Video } from 'lucide-react';
 import { useTheme } from '../../hooks/Theme';
 
 export default function Navbar() {
@@ -14,7 +14,8 @@ export default function Navbar() {
     { name: 'Standings', path: '/standings', icon: <Flag size={20} /> },
     { name: 'Car Gallery', path: '/gallery', icon: <Car size={20} /> },
     { name: 'Circuits', path: '/circuits', icon: <Flag size={20} /> },
-    { name: 'Reaction Game', path: '/games/reaction', icon: <Trophy size={20} /> }
+    { name: 'Live', path: '/live', icon: <Video size={20} /> },
+    // { name: 'Reaction Game', path: '/games/reaction', icon: <Trophy size={20} /> }
   ];
 
   return (
