@@ -17,14 +17,12 @@ const Live = () => {
         try {
             // Using CORS proxy to fetch live data
             const proxyUrl = 'https://api.allorigins.win/raw?url=';
-            const targetUrl = 'https://racingnews365.com/cache/site/RN365EN/json/livetiming/race-results-1314.json?cache_control=1&cache_seconds=2592000&cache_tags[0]=livetiming';
+            const targetUrl = 'https://racingnews365.com/cache/site/RN365EN/json/livetiming/race-results-1315.json?cache_control=1&cache_seconds=2592000&cache_tags%5B0%5D=livetiming';
 
             const response = await axios.get(proxyUrl + encodeURIComponent(targetUrl));
 
             setLiveData(response.data);
-            if (response.data?.live) {
-                setLastUpdate(new Date());
-            }
+            setLastUpdate(new Date());
             setIsLive(response.data?.live || false);
             setError(null);
         } catch (err) {
@@ -40,7 +38,6 @@ const Live = () => {
         // Fetch live data on initial load
         fetchLiveData();
 
-        if (!isLive) return
         // Update every 30 seconds
         const interval = setInterval(fetchLiveData, 5000);
 

@@ -1,34 +1,4 @@
-// IF NEEDED FOR FUTURE
-// export interface Driver {
-//     id;
-//     name;
-//     number: number;
-//     nationality;
-//     teamId;
-//     imageUrl;
-//     helmet;
-//     
-//     poles: number;
-//     wins: number;
-//     podiums: number;
-//     fastestLaps: number;
-//     bio;
-// }
-
-// export interface Team {
-//     id;
-//     name;
-//     fullName;
-//     base;
-//     teamPrincipal;
-//     founded: number;
-//     
-//     logo;
-//     carImageUrl;
-//     primaryColor;
-//     secondaryColor;
-//     bio;
-// }
+import schedule from "./schedule.json"
 
 export const teams1 = [
     {
@@ -924,4 +894,8 @@ export async function getCircuit(circuitId) {
             description: null,
         };
     }
+}
+
+export async function getScheduledCircuit(circuitId) {
+    return schedule.find(c => c.id === parseInt(circuitId))
 }

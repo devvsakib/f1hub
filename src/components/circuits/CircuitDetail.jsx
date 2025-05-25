@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useQuery } from 'react-query';
-import { getCircuit } from '../../services/data';
+import { getCircuit, getScheduledCircuit } from '../../services/data';
 import { ArrowLeft, MapPin, Globe, Calendar, Compass, ZoomOut } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'motion/react';
@@ -14,7 +14,11 @@ export default function CircuitDetail() {
         isLoading,
         error,
     } = useQuery(['circuit', circuitId], () => getCircuit(circuitId));
-
+    const {
+        data: schedule,
+        isLoading: isScheduleLoading,
+    } = useQuery(['schedule', circuitId], () => getScheduledCircuit(circuitId));
+    console.log(schedule)
     const handleImageClick = () => {
         setIsModalOpen(true);
     };
@@ -23,7 +27,7 @@ export default function CircuitDetail() {
         setIsModalOpen(false);
     };
 
-    if (isLoading) {
+    if (!schedule && isLoading || isScheduleLoading) {
         return (
             <div className="flex items-center justify-center min-h-screen">
                 <div className="w-16 h-16 border-4 border-f1-red border-t-transparent rounded-full animate-spin"></div>
@@ -31,24 +35,24 @@ export default function CircuitDetail() {
         );
     }
 
-    if (error || !circuit) {
-        return (
-            <div className="container mx-auto px-4 py-12">
-                <div className="bg-red-100 border-l-4 border-red-500 p-4 rounded-md">
-                    <p className="text-red-700">Error loading circuit data. Please try again later.</p>
-                </div>
-                <div className="mt-6">
-                    <Link
-                        to="/circuits"
-                        className="inline-flex items-center gap-2 text-sm font-medium text-white bg-f1-red hover:bg-red-700 px-4 py-2 rounded transition"
-                    >
-                        <ArrowLeft size={18} />
-                        Back to Circuits
-                    </Link>
-                </div>
-            </div>
-        );
-    }
+    // if (!schedule || error ||  !circuit) {
+    //     return (
+    //         <div className="container mx-auto px-4 py-12">
+    //             <div className="bg-red-100 border-l-4 border-red-500 p-4 rounded-md">
+    //                 <p className="text-red-700">Error loading circuit data. Please try again later.</p>
+    //             </div>
+    //             <div className="mt-6">
+    //                 <Link
+    //                     to="/circuits"
+    //                     className="inline-flex items-center gap-2 text-sm font-medium text-white bg-f1-red hover:bg-red-700 px-4 py-2 rounded transition"
+    //                 >
+    //                     <ArrowLeft size={18} />
+    //                     Back to Circuits
+    //                 </Link>
+    //             </div>
+    //         </div>
+    //     );
+    // }
 
     return (
         <div className="container mx-auto px-4 py-12 space-y-10">
@@ -64,48 +68,51 @@ export default function CircuitDetail() {
             </div>
 
             {/* Circuit Card */}
-            <div className="rounded-xl shadow-xl overflow-hidden bg-white">
+            <div className="rounded-xl shadow-xl overflow-hidden text-white">
                 <div className="h-2 bg-(--f1-red)" />
                 <div className="p-6 md:p-8 space-y-6 grid grid-cols-2 gap-5">
-                    {circuit.thumbnail && (
-                        <div className="relative">
-                            <motion.img
-                                src={circuit.thumbnail}
-                                alt={circuit.circuitName}
-                                className="w-5/6 h-auto object-cover cursor-pointer"
-                                onClick={handleImageClick}
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
-                            />
-                            <p className="text-center text-gray-500 mt-2 cursor-pointer">Click to zoom in</p>
-                        </div>
-                    )}
+                    {/* {circuit.thumbnail && (*/}
+                    <div className="relative">
+                        <motion.img
+                            src={"/assets/circuits/" + circuitId + ".avif"}
+                            alt={schedule.title}
+                            className="w-5/6 h-auto object-cover cursor-pointer"
+                            onClick={handleImageClick}
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ duration: 0.3 }}
+                        />
+                        <p className="text-center text-gray-500 mt-2 cursor-pointer">Click to zoom in</p>
+                    </div>
+                    {/*  )} */}
                     {/* Header */}
                     <div className='grid gap-4'>
                         <div className="grid items-start md:items-center justify-between gap-1">
                             <div className="flex items-center gap-4">
                                 <div>
-                                    <h1 className="text-3xl font-bold">{circuit.circuitName}</h1>
+                                    {/* <h1 className="text-3xl font-bold">{circuit.circuitName}</h1> */}
+                                    <h1 className="text-3xl font-bold">{schedule.title}</h1>
                                 </div>
                             </div>
 
                             <div className="flex flex-wrap gap-4 text-sm text-gray-700">
                                 <div className="flex items-center gap-2">
                                     <MapPin size={18} />
-                                    <span>{circuit.Location?.locality}</span>
+                                    {/* <span>{circuit.Location?.locality}</span> */}
+                                    {/* <span>{circuit.Location?.locality}</span> */}
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <Globe size={18} />
-                                    <span>{circuit.Location?.country}</span>
+                                    {/* <span>{circuit.Location?.country}</span> */}
+                                    {/* <span>{circuit.Location?.country}</span> */}
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <Calendar size={18} />
-                                    <span>Lat: {circuit.Location?.lat} / Long: {circuit.Location?.long}</span>
+                                    {/* <span>Lat: {circuit.Location?.lat} / Long: {circuit.Location?.long}</span> */}
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <Compass size={18} />
                                     <a
-                                        href={circuit.url}
+                                        // href={circuit.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-blue-600 underline"
@@ -115,9 +122,9 @@ export default function CircuitDetail() {
                                 </div>
                             </div>
                         </div>
-                        {circuit.description && (
+                        {/* {circuit.description && (
                             <p className="text-gray-700 leading-relaxed">{circuit.description}</p>
-                        )}
+                        )} */}
                     </div>
                 </div>
             </div>
