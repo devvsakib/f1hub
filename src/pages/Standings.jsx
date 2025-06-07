@@ -32,11 +32,11 @@ const Standings = () => {
     const getPositionIcon = (position) => {
         switch (position) {
             case 1:
-                return <Crown className="w-5 h-5 text-yellow-400" />;
+                return <Crown className="w-5 h-5 text-white" />;
             case 2:
-                return <Medal className="w-5 h-5 text-gray-300" />;
+                return <Medal className="w-5 h-5 text-white" />;
             case 3:
-                return <Award className="w-5 h-5 text-amber-600" />;
+                return <Award className="w-5 h-5 text-white" />;
             default:
                 return null;
         }
@@ -121,7 +121,7 @@ const Standings = () => {
                                 : 'bg-white border-gray-300 text-slate-700'
                                 }`}
                         >
-                            {Array.from({ length: 11 }, (_, i) => 2015 + i).map((year) => (
+                            {Array.from({ length: 75 }, (_, i) => 1950 + i).map((year) => (
                                 <option key={year} value={year}>{year}</option>
                             ))}
                         </select>
@@ -169,7 +169,7 @@ const Standings = () => {
                                     ? 'bg-gradient-to-r from-slate-800/80 to-slate-700/80 border-slate-700/50'
                                     : 'bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200'
                                     }`}>
-                                    <h2 className={`text-2xl font-bold flex items-center gap-3 ${isDarkMode ? 'text-white' : 'text-slate-800'
+                                    <h2 className={`text-xl md:text-2xl font-bold flex items-center gap-3 ${isDarkMode ? 'text-white' : 'text-slate-800'
                                         }`}>
                                         <Trophy className="w-6 h-6 text-yellow-400" />
                                         Driver Championship
@@ -177,28 +177,27 @@ const Standings = () => {
                                 </div>
 
                                 <div className="overflow-x-auto">
-                                    <div className="space-y-2 p-6">
+                                    <div className="space-y-2 p-2 md:p-6">
                                         {driversStandings?.standings?.entries?.map((driver, index) => {
                                             const position = parseInt(driver.stats[0]?.value || index + 1);
                                             return (
                                                 <div
                                                     key={index}
-                                                    className={`group backdrop-blur-sm rounded-xl p-4 border transition-all duration-300 hover:shadow-xl ${isDarkMode
+                                                    className={`group backdrop-blur-sm rounded-xl p-4 border-l-3 md:border-l-4 transition-all duration-300 hover:shadow-xl ${isDarkMode
                                                         ? 'bg-slate-800/50 border-slate-700/30 hover:border-slate-600/50 hover:bg-slate-700/50 hover:shadow-slate-900/20'
                                                         : 'bg-white/60 border-gray-200 hover:border-gray-300 hover:bg-white/80 hover:shadow-gray-500/10'
                                                         }`}
-                                                    style={{ borderLeft: `5px solid ${getTeamColor(driver.athlete.name)}` }}
+                                                    style={{ borderColor: getTeamColor(driver.athlete.name) }}
                                                 >
                                                     <div className="flex items-center justify-between">
                                                         <div className="flex items-center gap-4">
                                                             {/* Position Badge */}
-                                                            <div className={`w-12 h-12 rounded-xl ${getPositionBadgeColor(position)} flex items-center justify-center font-bold text-lg`}>
+                                                            <div className={`w-8 h-8 md:w-12 md:h-12 rounded-xl ${getPositionBadgeColor(position)} flex items-center justify-center font-bold text-lg`}>
                                                                 {position <= 3 ? getPositionIcon(position) : position}
                                                             </div>
-                                                            {/* {console.log()} */}
                                                             {/* Driver Info */}
                                                             <div className="flex items-center gap-4">
-                                                                <div className={`w-14 h-14 rounded-full overflow-hidden border-2 shadow-lg ${isDarkMode
+                                                                <div className={`w-12 h-auto md:w-14 md:h-14 rounded-full overflow-hidden border-2 shadow-lg ${isDarkMode
                                                                     ? 'bg-slate-700 border-slate-600'
                                                                     : 'bg-gray-100 border-gray-300'
                                                                     }`}>
@@ -213,15 +212,15 @@ const Standings = () => {
                                                                             : 'text-slate-800 hover:text-blue-600'
                                                                             }`}
                                                                     >
-                                                                        <h3 className="font-bold text-lg group-hover:text-blue-400 transition-colors duration-200">
+                                                                        <h3 className="md:font-bold text-sm md:text-lg group-hover:text-blue-400 transition-colors duration-200">
                                                                             {driver.athlete.name}
                                                                         </h3>
                                                                     </Link>
                                                                     <div className="flex items-center gap-2 mt-1">
                                                                         <img
                                                                             className='w-5 h-5 rounded shadow-sm object-cover'
-                                                                            alt={driver.athlete.flag.alt}
-                                                                            src={driver.athlete.flag.href}
+                                                                            alt={driver.athlete.flag?.alt}
+                                                                            src={driver.athlete.flag?.href}
                                                                         />
                                                                         <span className={`text-sm font-medium ${isDarkMode ? 'text-slate-400' : 'text-slate-600'
                                                                             }`}>
@@ -261,7 +260,7 @@ const Standings = () => {
                                     ? 'bg-gradient-to-r from-slate-800/80 to-slate-700/80 border-slate-700/50'
                                     : 'bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200'
                                     }`}>
-                                    <h2 className={`text-2xl font-bold flex items-center gap-3 ${isDarkMode ? 'text-white' : 'text-slate-800'
+                                    <h2 className={`text-lg md:text-2xl font-bold flex items-center gap-3 ${isDarkMode ? 'text-white' : 'text-slate-800'
                                         }`}>
                                         <Users className="w-6 h-6 text-blue-400" />
                                         Constructor Championship
@@ -269,29 +268,29 @@ const Standings = () => {
                                 </div>
 
                                 <div className="overflow-x-auto">
-                                    <div className="space-y-2 p-6">
+                                    <div className="space-y-2 p-2 md:p-6">
                                         {constructorsStandings?.standings?.entries?.map((team, index) => {
                                             const position = parseInt(team.stats[0]?.value || index + 1);
                                             return (
                                                 <div
                                                     key={position || index}
-                                                    className={`group backdrop-blur-sm rounded-xl p-4 border transition-all duration-300 hover:shadow-xl ${isDarkMode
+                                                    className={`group backdrop-blur-sm rounded-xl p-4 border-l-3 md:border-l-4 transition-all duration-300 hover:shadow-xl ${isDarkMode
                                                         ? 'bg-slate-800/50 border-slate-700/30 hover:border-slate-600/50 hover:bg-slate-700/50 hover:shadow-slate-900/20'
                                                         : 'bg-white/60 border-gray-200 hover:border-gray-300 hover:bg-white/80 hover:shadow-gray-500/10'
                                                         }`}
-                                                         style={{ borderLeft: `5px solid ${teams.find((t) => t.name === teamName(team.team.name))?.primaryColor}` }}
+                                                    style={{ borderColor: teams.find((t) => t.name === teamName(team.team.name))?.primaryColor }}
                                                 >
                                                     <div className="flex items-center justify-between">
                                                         <div className="flex items-center gap-4">
                                                             {/* Position Badge */}
-                                                            <div className={`w-12 h-12 rounded-xl ${getPositionBadgeColor(position)} flex items-center justify-center font-bold text-lg`}>
+                                                            <div className={`w-8 h-8 md:w-12 md:h-12 rounded-xl ${getPositionBadgeColor(position)} flex items-center justify-center font-bold text-lg`}>
                                                                 {position <= 3 ? getPositionIcon(position) : position}
                                                             </div>
 
                                                             {/* Team Info */}
                                                             <div className="flex items-center gap-4">
                                                                 <div
-                                                                    className={`w-14 h-14 rounded-full ${team.team.color} flex items-center justify-center shadow-lg border-2 ${isDarkMode ? 'border-slate-600' : 'border-gray-300'
+                                                                    className={`w-10 h-auto md:w-14 md:h-14 rounded-full ${team.team.color} flex items-center justify-center shadow-lg border-2 ${isDarkMode ? 'border-slate-600' : 'border-gray-300'
                                                                         }`}
                                                                 >
                                                                     <GetImage
@@ -305,13 +304,13 @@ const Standings = () => {
                                                                 </div>
 
                                                                 <div>
-                                                                    <h3 className={`font-bold text-lg group-hover:text-blue-400 transition-colors duration-200 ${isDarkMode ? 'text-white' : 'text-slate-800'
+                                                                    <h3 className={`md:font-bold text-sm md:text-lg group-hover:text-blue-400 transition-colors duration-200 ${isDarkMode ? 'text-white' : 'text-slate-800'
                                                                         }`}>
                                                                         {team.team.name}
                                                                     </h3>
                                                                     <div className={`text-sm font-medium mt-1 ${isDarkMode ? 'text-slate-400' : 'text-slate-600'
                                                                         }`}>
-                                                                        {drivers?.filter(driver => driver.teamId == team.team.name.replaceAll(' ', '').toLowerCase())?.map(driver => driver.name).join(', ')}
+                                                                        {drivers?.filter(driver => driver.teamId == team.team.name.replaceAll(' ', '').toLowerCase())?.map(driver => <p key={driver.id} className="text-xs">{driver.name}</p>)}
                                                                     </div>
                                                                 </div>
                                                             </div>

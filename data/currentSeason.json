@@ -1,0 +1,2470 @@
+{
+    "events": [
+        {
+            "id": 196,
+            "title": "Australian GP",
+            "countryShort": "AUS",
+            "countryFull": "Australian",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/australian-gp",
+            "subEvents": [
+                {
+                    "id": 1276,
+                    "title": "practice-1",
+                    "status": "completed",
+                    "dateStart": "2025-03-14T02:30:00+01:00",
+                    "dateEnd": "2025-03-14T03:30:00+01:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:17.252"
+                        },
+                        {
+                            "name": "SAI",
+                            "color": "#64C4FF",
+                            "time": "1:17.401"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:17.461"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:17.670"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:17.696"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-australian-grand-prix-free-practice-1-results"
+                },
+                {
+                    "id": 1277,
+                    "title": "practice-2",
+                    "status": "completed",
+                    "dateStart": "2025-03-14T06:00:00+01:00",
+                    "dateEnd": "2025-03-14T07:00:00+01:00",
+                    "result": [
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:16.439"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:16.563"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:16.580"
+                        },
+                        {
+                            "name": "TSU",
+                            "color": "#6692FF",
+                            "time": "1:16.784"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:16.859"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-australian-grand-prix-free-practice-2-results"
+                },
+                {
+                    "id": 1278,
+                    "title": "practice-3",
+                    "status": "completed",
+                    "dateStart": "2025-03-15T02:30:00+01:00",
+                    "dateEnd": "2025-03-15T03:30:00+01:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:15.921"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:15.960"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:16.002"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:16.188"
+                        },
+                        {
+                            "name": "ANT",
+                            "color": "#27F4D2",
+                            "time": "1:16.206"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-australian-grand-prix-free-practice-3-results"
+                },
+                {
+                    "id": 1279,
+                    "title": "qualification",
+                    "status": "completed",
+                    "dateStart": "2025-03-15T06:00:00+01:00",
+                    "dateEnd": "2025-03-15T07:00:00+01:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:15.096"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:15.180"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:15.481"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:15.546"
+                        },
+                        {
+                            "name": "TSU",
+                            "color": "#6692FF",
+                            "time": "1:15.670"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-australian-grand-prix-qualifying-results"
+                },
+                {
+                    "id": 1280,
+                    "title": "race",
+                    "status": "completed",
+                    "dateStart": "2025-03-16T05:00:00+01:00",
+                    "dateEnd": "2025-03-16T07:00:00+01:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": ""
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "+0.895"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "+8.481"
+                        },
+                        {
+                            "name": "ANT",
+                            "color": "#27F4D2",
+                            "time": "+10.135"
+                        },
+                        {
+                            "name": "ALB",
+                            "color": "#64C4FF",
+                            "time": "+12.773"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-australian-grand-prix-results"
+                }
+            ]
+        },
+        {
+            "id": 197,
+            "title": "Chinese GP",
+            "countryShort": "CHN",
+            "countryFull": "Chinese",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/gp-china",
+            "subEvents": [
+                {
+                    "id": 1281,
+                    "title": "practice-1",
+                    "status": "completed",
+                    "dateStart": "2025-03-21T04:30:00+01:00",
+                    "dateEnd": "2025-03-21T05:30:00+01:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:31.504"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:31.958"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:32.153"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:32.195"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:32.377"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-chinese-grand-prix-free-practice-results"
+                },
+                {
+                    "id": 1282,
+                    "title": "sprint-shootout",
+                    "status": "completed",
+                    "dateStart": "2025-03-21T08:30:00+01:00",
+                    "dateEnd": "2025-03-21T09:14:00+01:00",
+                    "result": [
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:30.849"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:30.867"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:30.929"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:31.057"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:31.169"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-chinese-grand-prix-sprint-qualifying-results"
+                },
+                {
+                    "id": 1283,
+                    "title": "sprint-qualification",
+                    "status": "completed",
+                    "dateStart": "2025-03-22T04:00:00+01:00",
+                    "dateEnd": "2025-03-22T05:00:00+01:00",
+                    "result": [
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "LAP 19"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "+6.889"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "+9.804"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "+11.592"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "+12.190"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-chinese-grand-prix-sprint-results"
+                },
+                {
+                    "id": 1284,
+                    "title": "qualification",
+                    "status": "completed",
+                    "dateStart": "2025-03-22T08:00:00+01:00",
+                    "dateEnd": "2025-03-22T09:00:00+01:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:30.641"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:30.723"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:30.793"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:30.817"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:30.927"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-chinese-grand-prix-qualifying-results"
+                },
+                {
+                    "id": 1285,
+                    "title": "race",
+                    "status": "completed",
+                    "dateStart": "2025-03-23T08:00:00+01:00",
+                    "dateEnd": "2025-03-23T10:00:00+01:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": ""
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "+9.748"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "+11.097"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "+16.656"
+                        },
+                        {
+                            "name": "OCO",
+                            "color": "#B6BABD",
+                            "time": "+49.969"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/adjusted-2025-f1-chinese-grand-prix-results-after-shock-disqualifications"
+                }
+            ]
+        },
+        {
+            "id": 198,
+            "title": "Japanese GP",
+            "countryShort": "JPN",
+            "countryFull": "Japanese",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/japanese-gp",
+            "subEvents": [
+                {
+                    "id": 1286,
+                    "title": "practice-1",
+                    "status": "completed",
+                    "dateStart": "2025-04-04T04:30:00+02:00",
+                    "dateEnd": "2025-04-04T05:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:28.549"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:28.712"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:28.965"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:29.051"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:29.065"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-japanese-grand-prix-free-practice-1-results"
+                },
+                {
+                    "id": 1287,
+                    "title": "practice-2",
+                    "status": "completed",
+                    "dateStart": "2025-04-04T08:00:00+02:00",
+                    "dateEnd": "2025-04-04T09:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:28.114"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:28.163"
+                        },
+                        {
+                            "name": "HAD",
+                            "color": "#6692FF",
+                            "time": "1:28.518"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:28.544"
+                        },
+                        {
+                            "name": "LAW",
+                            "color": "#6692FF",
+                            "time": "1:28.559"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-japanese-grand-prix-free-practice-2-results"
+                },
+                {
+                    "id": 1288,
+                    "title": "practice-3",
+                    "status": "completed",
+                    "dateStart": "2025-04-05T04:30:00+02:00",
+                    "dateEnd": "2025-04-05T05:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:27.965"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:27.991"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:28.077"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:28.414"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:28.497"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-japanese-grand-prix-free-practice-3-results"
+                },
+                {
+                    "id": 1289,
+                    "title": "qualification",
+                    "status": "completed",
+                    "dateStart": "2025-04-05T08:00:00+02:00",
+                    "dateEnd": "2025-04-05T09:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:26.983"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:26.995"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:27.027"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:27.299"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:27.318"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-japanese-grand-prix-qualifying-results"
+                },
+                {
+                    "id": 1290,
+                    "title": "race",
+                    "status": "completed",
+                    "dateStart": "2025-04-06T07:00:00+02:00",
+                    "dateEnd": "2025-04-06T09:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "LAP 53"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "+1.423"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "+2.129"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "+16.097"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "+17.362"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/live-2025-f1-japanese-grand-prix-results"
+                }
+            ]
+        },
+        {
+            "id": 199,
+            "title": "Bahrain GP",
+            "countryShort": "BHR",
+            "countryFull": "Bahrain",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/bahrain-gp",
+            "subEvents": [
+                {
+                    "id": 1291,
+                    "title": "practice-1",
+                    "status": "completed",
+                    "dateStart": "2025-04-11T13:30:00+02:00",
+                    "dateEnd": "2025-04-11T14:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:33.204"
+                        },
+                        {
+                            "name": "GAS",
+                            "color": "#FF87BC",
+                            "time": "1:33.442"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:33.800"
+                        },
+                        {
+                            "name": "ALB",
+                            "color": "#64C4FF",
+                            "time": "1:33.928"
+                        },
+                        {
+                            "name": "OCO",
+                            "color": "#B6BABD",
+                            "time": "1:34.184"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-bahrain-grand-prix---free-practice-1-results"
+                },
+                {
+                    "id": 1292,
+                    "title": "practice-2",
+                    "status": "completed",
+                    "dateStart": "2025-04-11T17:00:00+02:00",
+                    "dateEnd": "2025-04-11T18:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:30.505"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:30.659"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:31.032"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:31.045"
+                        },
+                        {
+                            "name": "ANT",
+                            "color": "#27F4D2",
+                            "time": "1:31.227"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-bahrain-grand-prix---free-practice-2-results"
+                },
+                {
+                    "id": 1293,
+                    "title": "practice-3",
+                    "status": "completed",
+                    "dateStart": "2025-04-12T14:30:00+02:00",
+                    "dateEnd": "2025-04-12T15:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:31.646"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:32.314"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:32.480"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:32.827"
+                        },
+                        {
+                            "name": "ANT",
+                            "color": "#27F4D2",
+                            "time": "1:32.916"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-bahrain-grand-prix---free-practice-3-results"
+                },
+                {
+                    "id": 1294,
+                    "title": "qualification",
+                    "status": "completed",
+                    "dateStart": "2025-04-12T18:00:00+02:00",
+                    "dateEnd": "2025-04-12T19:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:29.841"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:30.009"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:30.175"
+                        },
+                        {
+                            "name": "ANT",
+                            "color": "#27F4D2",
+                            "time": "1:30.213"
+                        },
+                        {
+                            "name": "GAS",
+                            "color": "#FF87BC",
+                            "time": "1:30.216"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-bahrain-grand-prix---qualifying-results"
+                },
+                {
+                    "id": 1295,
+                    "title": "race",
+                    "status": "completed",
+                    "dateStart": "2025-04-13T17:00:00+02:00",
+                    "dateEnd": "2025-04-13T19:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": ""
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "+15.499"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "+16.273"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "+19.679"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "+27.993"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/adjusted-2025-f1-bahrain-grand-prix-results-after-disqualification"
+                }
+            ]
+        },
+        {
+            "id": 200,
+            "title": "Saudi Arabian GP",
+            "countryShort": "SAU",
+            "countryFull": "Saudi Arabian",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/saudi-arabian-gp",
+            "subEvents": [
+                {
+                    "id": 1296,
+                    "title": "practice-1",
+                    "status": "completed",
+                    "dateStart": "2025-04-18T15:30:00+02:00",
+                    "dateEnd": "2025-04-18T16:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "GAS",
+                            "color": "#FF87BC",
+                            "time": "1:29.239"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:29.246"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:29.309"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:29.341"
+                        },
+                        {
+                            "name": "ALB",
+                            "color": "#64C4FF",
+                            "time": "1:29.606"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-saudi-arabian-grand-prix-jeddah-free-practice-1-results"
+                },
+                {
+                    "id": 1297,
+                    "title": "practice-2",
+                    "status": "completed",
+                    "dateStart": "2025-04-18T19:00:00+02:00",
+                    "dateEnd": "2025-04-18T20:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:28.267"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:28.430"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:28.547"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:28.749"
+                        },
+                        {
+                            "name": "SAI",
+                            "color": "#64C4FF",
+                            "time": "1:28.942"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-saudi-arabian-grand-prix-jeddah-free-practice-2-results"
+                },
+                {
+                    "id": 1298,
+                    "title": "practice-3",
+                    "status": "completed",
+                    "dateStart": "2025-04-19T15:30:00+02:00",
+                    "dateEnd": "2025-04-19T16:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:27.489"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:27.513"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:28.116"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:28.334"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:28.372"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-saudi-arabian-grand-prix-jeddah-free-practice-3-results"
+                },
+                {
+                    "id": 1299,
+                    "title": "qualification",
+                    "status": "completed",
+                    "dateStart": "2025-04-19T19:00:00+02:00",
+                    "dateEnd": "2025-04-19T20:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:27.294"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:27.304"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:27.407"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:27.670"
+                        },
+                        {
+                            "name": "ANT",
+                            "color": "#27F4D2",
+                            "time": "1:27.866"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-saudi-arabian-grand-prix-jeddah-qualifying-results"
+                },
+                {
+                    "id": 1300,
+                    "title": "race",
+                    "status": "completed",
+                    "dateStart": "2025-04-20T19:00:00+02:00",
+                    "dateEnd": "2025-04-20T21:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "LAP 50"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "+2.843"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "+8.104"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "+9.196"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "+27.236"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-saudi-arabian-grand-prix-jeddah-results"
+                }
+            ]
+        },
+        {
+            "id": 201,
+            "title": "Miami GP",
+            "countryShort": "USA",
+            "countryFull": "Miami",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/gp-miami",
+            "subEvents": [
+                {
+                    "id": 1301,
+                    "title": "practice-1",
+                    "status": "completed",
+                    "dateStart": "2025-05-02T18:30:00+02:00",
+                    "dateEnd": "2025-05-02T19:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:27.128"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:27.484"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:27.558"
+                        },
+                        {
+                            "name": "SAI",
+                            "color": "#64C4FF",
+                            "time": "1:27.678"
+                        },
+                        {
+                            "name": "ALB",
+                            "color": "#64C4FF",
+                            "time": "1:27.955"
+                        }
+                    ],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1302,
+                    "title": "sprint-shootout",
+                    "status": "completed",
+                    "dateStart": "2025-05-02T22:30:00+02:00",
+                    "dateEnd": "2025-05-02T23:14:59+02:00",
+                    "result": [
+                        {
+                            "name": "ANT",
+                            "color": "#27F4D2",
+                            "time": "1:26.482"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:26.527"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:26.582"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:26.737"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:26.791"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-miami-grand-prix-sprint-qualifying-results"
+                },
+                {
+                    "id": 1303,
+                    "title": "sprint-qualification",
+                    "status": "completed",
+                    "dateStart": "2025-05-03T18:00:00+02:00",
+                    "dateEnd": "2025-05-03T19:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": ""
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "+0.672"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "+1.073"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "+3.127"
+                        },
+                        {
+                            "name": "STR",
+                            "color": "#229971",
+                            "time": "+3.412"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/adjusted-2025-f1-miami-grand-prix-sprint-results-after-penalty"
+                },
+                {
+                    "id": 1304,
+                    "title": "qualification",
+                    "status": "completed",
+                    "dateStart": "2025-05-03T22:15:00+02:00",
+                    "dateEnd": "2025-05-03T23:15:00+02:00",
+                    "result": [
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:26.204"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:26.269"
+                        },
+                        {
+                            "name": "ANT",
+                            "color": "#27F4D2",
+                            "time": "1:26.271"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:26.375"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:26.385"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-miami-grand-prix-qualifying-results"
+                },
+                {
+                    "id": 1305,
+                    "title": "race",
+                    "status": "completed",
+                    "dateStart": "2025-05-04T22:00:00+02:00",
+                    "dateEnd": "2025-05-04T23:59:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "LAP 57"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "+4.630"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "+37.644"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "+39.956"
+                        },
+                        {
+                            "name": "ALB",
+                            "color": "#64C4FF",
+                            "time": "+48.067"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-miami-grand-prix-results"
+                }
+            ]
+        },
+        {
+            "id": 202,
+            "title": "Imola GP",
+            "countryShort": "ITA",
+            "countryFull": "Emilia Romagna",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/emilia-romagna-gp",
+            "subEvents": [
+                {
+                    "id": 1306,
+                    "title": "practice-1",
+                    "status": "completed",
+                    "dateStart": "2025-05-16T13:30:00+02:00",
+                    "dateEnd": "2025-05-16T14:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:16.545"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:16.577"
+                        },
+                        {
+                            "name": "SAI",
+                            "color": "#64C4FF",
+                            "time": "1:16.597"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:16.599"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:16.641"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-emilia-romagna-grand-prix-imola-free-practice-1-results"
+                },
+                {
+                    "id": 1307,
+                    "title": "practice-2",
+                    "status": "completed",
+                    "dateStart": "2025-05-16T17:00:00+02:00",
+                    "dateEnd": "2025-05-16T18:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:15.293"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:15.318"
+                        },
+                        {
+                            "name": "GAS",
+                            "color": "#FF87BC",
+                            "time": "1:15.569"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:15.693"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:15.735"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-emilia-romagna-grand-prix-imola-free-practice-2-results"
+                },
+                {
+                    "id": 1308,
+                    "title": "practice-3",
+                    "status": "completed",
+                    "dateStart": "2025-05-17T12:30:00+02:00",
+                    "dateEnd": "2025-05-17T13:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:14.897"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:14.997"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:15.078"
+                        },
+                        {
+                            "name": "ANT",
+                            "color": "#27F4D2",
+                            "time": "1:15.399"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:15.451"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-emilia-romagna-grand-prix-imola-free-practice-3-results"
+                },
+                {
+                    "id": 1309,
+                    "title": "qualification",
+                    "status": "completed",
+                    "dateStart": "2025-05-17T16:00:00+02:00",
+                    "dateEnd": "2025-05-17T17:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:14.670"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:14.704"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:14.807"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:14.962"
+                        },
+                        {
+                            "name": "ALO",
+                            "color": "#229971",
+                            "time": "1:15.431"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-emilia-romagna-grand-prix-imola-qualifying-results"
+                },
+                {
+                    "id": 1310,
+                    "title": "race",
+                    "status": "completed",
+                    "dateStart": "2025-05-18T15:00:00+02:00",
+                    "dateEnd": "2025-05-18T17:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "LAP 63"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "+6.109"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "+12.956"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "+14.356"
+                        },
+                        {
+                            "name": "ALB",
+                            "color": "#64C4FF",
+                            "time": "+17.945"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-emilia-romagna-grand-prix-imola-results"
+                }
+            ]
+        },
+        {
+            "id": 203,
+            "title": "Monaco GP",
+            "countryShort": "MCO",
+            "countryFull": "Monaco",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/monaco-gp",
+            "subEvents": [
+                {
+                    "id": 1311,
+                    "title": "practice-1",
+                    "status": "completed",
+                    "dateStart": "2025-05-23T13:30:00+02:00",
+                    "dateEnd": "2025-05-23T14:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:11.964"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:12.127"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:12.290"
+                        },
+                        {
+                            "name": "ALB",
+                            "color": "#64C4FF",
+                            "time": "1:12.314"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:12.342"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-monaco-grand-prix-free-practice-1-results"
+                },
+                {
+                    "id": 1312,
+                    "title": "practice-2",
+                    "status": "completed",
+                    "dateStart": "2025-05-23T17:00:00+02:00",
+                    "dateEnd": "2025-05-23T18:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:11.355"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:11.393"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:11.460"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:11.677"
+                        },
+                        {
+                            "name": "LAW",
+                            "color": "#6692FF",
+                            "time": "1:11.823"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-monaco-grand-prix-free-practice-2"
+                },
+                {
+                    "id": 1313,
+                    "title": "practice-3",
+                    "status": "completed",
+                    "dateStart": "2025-05-24T12:30:00+02:00",
+                    "dateEnd": "2025-05-24T13:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:10.953"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:11.233"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:11.247"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:11.398"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:11.516"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-monaco-grand-prix---free-practice-3-results"
+                },
+                {
+                    "id": 1314,
+                    "title": "qualification",
+                    "status": "completed",
+                    "dateStart": "2025-05-24T16:00:00+02:00",
+                    "dateEnd": "2025-05-24T17:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:09.954"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:10.063"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:10.129"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:10.382"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:10.669"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-monaco-grand-prix-qualifying-results"
+                },
+                {
+                    "id": 1315,
+                    "title": "race",
+                    "status": "completed",
+                    "dateStart": "2025-05-25T15:00:00+02:00",
+                    "dateEnd": "2025-05-25T17:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "LAP 78"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "+3.131"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "+3.658"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "+20.572"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "+51.387"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-monaco-grand-prix-results"
+                }
+            ]
+        },
+        {
+            "id": 204,
+            "title": "Spanish GP",
+            "countryShort": "ESP",
+            "countryFull": "Spanish",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/spanish-gp",
+            "subEvents": [
+                {
+                    "id": 1316,
+                    "title": "practice-1",
+                    "status": "completed",
+                    "dateStart": "2025-05-30T13:30:00+02:00",
+                    "dateEnd": "2025-05-30T14:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:13.718"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:14.085"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:14.096"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:14.238"
+                        },
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:14.294"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-spanish-grand-prix-free-practice-1-results"
+                },
+                {
+                    "id": 1317,
+                    "title": "practice-2",
+                    "status": "completed",
+                    "dateStart": "2025-05-30T17:00:00+02:00",
+                    "dateEnd": "2025-05-30T18:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:12.760"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:13.046"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:13.070"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:13.070"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:13.260"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-spanish-grand-prix-free-practice-2-results"
+                },
+                {
+                    "id": 1318,
+                    "title": "practice-3",
+                    "status": "completed",
+                    "dateStart": "2025-05-31T12:30:00+02:00",
+                    "dateEnd": "2025-05-31T13:30:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:12.387"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:12.913"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "1:13.130"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:13.139"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:13.375"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-spanish-grand-prix-free-practice-3-results"
+                },
+                {
+                    "id": 1319,
+                    "title": "qualification",
+                    "status": "completed",
+                    "dateStart": "2025-05-31T16:00:00+02:00",
+                    "dateEnd": "2025-05-31T17:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "1:11.546"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "1:11.755"
+                        },
+                        {
+                            "name": "VER",
+                            "color": "#3671C6",
+                            "time": "1:11.848"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "1:11.848"
+                        },
+                        {
+                            "name": "HAM",
+                            "color": "#E8002D",
+                            "time": "1:12.045"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-spanish-grand-prix-qualifying-results"
+                },
+                {
+                    "id": 1320,
+                    "title": "race",
+                    "status": "completed",
+                    "dateStart": "2025-06-01T15:00:00+02:00",
+                    "dateEnd": "2025-06-01T17:00:00+02:00",
+                    "result": [
+                        {
+                            "name": "PIA",
+                            "color": "#FF8000",
+                            "time": "LAP 66"
+                        },
+                        {
+                            "name": "NOR",
+                            "color": "#FF8000",
+                            "time": "+2.471"
+                        },
+                        {
+                            "name": "LEC",
+                            "color": "#E8002D",
+                            "time": "+10.455"
+                        },
+                        {
+                            "name": "RUS",
+                            "color": "#27F4D2",
+                            "time": "+11.359"
+                        },
+                        {
+                            "name": "HUL",
+                            "color": "#52E252",
+                            "time": "+13.648"
+                        }
+                    ],
+                    "urlArticle": "https://racingnews365.com/2025-f1-spanish-grand-prix-results"
+                }
+            ]
+        },
+        {
+            "id": 205,
+            "title": "Canadian GP",
+            "countryShort": "CAN",
+            "countryFull": "Canadian",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/canadian-gp",
+            "subEvents": [
+                {
+                    "id": 1321,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-06-13T19:30:00+02:00",
+                    "dateEnd": "2025-06-13T20:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1322,
+                    "title": "practice-2",
+                    "status": "upcoming",
+                    "dateStart": "2025-06-13T23:00:00+02:00",
+                    "dateEnd": "2025-06-13T23:59:59+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1323,
+                    "title": "practice-3",
+                    "status": "upcoming",
+                    "dateStart": "2025-06-14T18:30:00+02:00",
+                    "dateEnd": "2025-06-14T19:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1324,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-06-14T22:00:00+02:00",
+                    "dateEnd": "2025-06-14T23:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1325,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-06-15T20:00:00+02:00",
+                    "dateEnd": "2025-06-15T22:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 206,
+            "title": "Austrian GP",
+            "countryShort": "AUT",
+            "countryFull": "Austrian",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/austrian-gp",
+            "subEvents": [
+                {
+                    "id": 1326,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-06-27T13:30:00+02:00",
+                    "dateEnd": "2025-06-27T14:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1327,
+                    "title": "practice-2",
+                    "status": "upcoming",
+                    "dateStart": "2025-06-27T17:00:00+02:00",
+                    "dateEnd": "2025-06-27T18:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1328,
+                    "title": "practice-3",
+                    "status": "upcoming",
+                    "dateStart": "2025-06-28T12:30:00+02:00",
+                    "dateEnd": "2025-06-28T13:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1329,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-06-28T16:00:00+02:00",
+                    "dateEnd": "2025-06-28T17:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1330,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-06-29T15:00:00+02:00",
+                    "dateEnd": "2025-06-29T17:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 207,
+            "title": "British GP",
+            "countryShort": "GBR",
+            "countryFull": "British",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/british-gp",
+            "subEvents": [
+                {
+                    "id": 1331,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-07-04T13:30:00+02:00",
+                    "dateEnd": "2025-07-04T14:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1332,
+                    "title": "practice-2",
+                    "status": "upcoming",
+                    "dateStart": "2025-07-04T17:00:00+02:00",
+                    "dateEnd": "2025-07-04T18:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1333,
+                    "title": "practice-3",
+                    "status": "upcoming",
+                    "dateStart": "2025-07-05T12:30:00+02:00",
+                    "dateEnd": "2025-07-05T13:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1334,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-07-05T16:00:00+02:00",
+                    "dateEnd": "2025-07-05T17:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1335,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-07-06T16:00:00+02:00",
+                    "dateEnd": "2025-07-06T18:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 208,
+            "title": "Belgian GP",
+            "countryShort": "BEL",
+            "countryFull": "Belgian",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/belgian-gp",
+            "subEvents": [
+                {
+                    "id": 1336,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-07-25T12:30:00+02:00",
+                    "dateEnd": "2025-07-25T13:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1337,
+                    "title": "sprint-shootout",
+                    "status": "upcoming",
+                    "dateStart": "2025-07-25T16:30:00+02:00",
+                    "dateEnd": "2025-07-25T17:14:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1338,
+                    "title": "sprint-qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-07-26T12:00:00+02:00",
+                    "dateEnd": "2025-07-26T13:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1339,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-07-26T16:00:00+02:00",
+                    "dateEnd": "2025-07-26T17:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1340,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-07-27T15:00:00+02:00",
+                    "dateEnd": "2025-07-27T17:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 209,
+            "title": "Hungarian GP",
+            "countryShort": "HUN",
+            "countryFull": "Hungarian",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/hungarian-gp",
+            "subEvents": [
+                {
+                    "id": 1341,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-08-01T13:30:00+02:00",
+                    "dateEnd": "2025-08-01T14:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1342,
+                    "title": "practice-2",
+                    "status": "upcoming",
+                    "dateStart": "2025-08-01T17:00:00+02:00",
+                    "dateEnd": "2025-08-01T18:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1343,
+                    "title": "practice-3",
+                    "status": "upcoming",
+                    "dateStart": "2025-08-02T12:30:00+02:00",
+                    "dateEnd": "2025-08-02T13:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1344,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-08-02T16:00:00+02:00",
+                    "dateEnd": "2025-08-02T17:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1345,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-08-03T15:00:00+02:00",
+                    "dateEnd": "2025-08-03T17:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 210,
+            "title": "Dutch GP",
+            "countryShort": "NLD",
+            "countryFull": "Dutch",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/dutch-gp",
+            "subEvents": [
+                {
+                    "id": 1346,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-08-29T12:30:00+02:00",
+                    "dateEnd": "2025-08-29T13:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1347,
+                    "title": "practice-2",
+                    "status": "upcoming",
+                    "dateStart": "2025-08-29T16:00:00+02:00",
+                    "dateEnd": "2025-08-29T17:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1348,
+                    "title": "practice-3",
+                    "status": "upcoming",
+                    "dateStart": "2025-08-30T11:30:00+02:00",
+                    "dateEnd": "2025-08-30T12:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1349,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-08-30T15:00:00+02:00",
+                    "dateEnd": "2025-08-30T16:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1350,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-08-31T15:00:00+02:00",
+                    "dateEnd": "2025-08-31T17:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 211,
+            "title": "Italian GP",
+            "countryShort": "ITA",
+            "countryFull": "Italian",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/italian-gp",
+            "subEvents": [
+                {
+                    "id": 1351,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-09-05T13:30:00+02:00",
+                    "dateEnd": "2025-09-05T14:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1352,
+                    "title": "practice-2",
+                    "status": "upcoming",
+                    "dateStart": "2025-09-05T17:00:00+02:00",
+                    "dateEnd": "2025-09-05T18:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1353,
+                    "title": "practice-3",
+                    "status": "upcoming",
+                    "dateStart": "2025-09-06T12:30:00+02:00",
+                    "dateEnd": "2025-09-06T13:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1354,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-09-06T16:00:00+02:00",
+                    "dateEnd": "2025-09-06T17:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1355,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-09-07T15:00:00+02:00",
+                    "dateEnd": "2025-09-07T17:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 212,
+            "title": "Azerbaijan GP",
+            "countryShort": "AZE",
+            "countryFull": "Azerbaijan",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/azerbaijan-gp",
+            "subEvents": [
+                {
+                    "id": 1356,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-09-19T10:30:00+02:00",
+                    "dateEnd": "2025-09-19T11:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1357,
+                    "title": "practice-2",
+                    "status": "upcoming",
+                    "dateStart": "2025-09-19T14:00:00+02:00",
+                    "dateEnd": "2025-09-19T15:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1358,
+                    "title": "practice-3",
+                    "status": "upcoming",
+                    "dateStart": "2025-09-20T10:30:00+02:00",
+                    "dateEnd": "2025-09-20T11:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1359,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-09-20T14:00:00+02:00",
+                    "dateEnd": "2025-09-20T15:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1360,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-09-21T13:00:00+02:00",
+                    "dateEnd": "2025-09-21T15:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 213,
+            "title": "Singapore GP",
+            "countryShort": "SGP",
+            "countryFull": "Singapore",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/singapore-gp",
+            "subEvents": [
+                {
+                    "id": 1361,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-03T11:30:00+02:00",
+                    "dateEnd": "2025-10-03T12:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1362,
+                    "title": "practice-2",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-03T15:00:00+02:00",
+                    "dateEnd": "2025-10-03T16:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1363,
+                    "title": "practice-3",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-04T11:30:00+02:00",
+                    "dateEnd": "2025-10-04T12:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1364,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-04T15:00:00+02:00",
+                    "dateEnd": "2025-10-04T16:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1365,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-05T14:00:00+02:00",
+                    "dateEnd": "2025-10-05T16:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 214,
+            "title": "United States GP",
+            "countryShort": "USA",
+            "countryFull": "United States",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/united-states-gp",
+            "subEvents": [
+                {
+                    "id": 1366,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-17T19:30:00+02:00",
+                    "dateEnd": "2025-10-17T20:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1367,
+                    "title": "sprint-shootout",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-17T23:30:00+02:00",
+                    "dateEnd": "2025-10-18T00:14:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1368,
+                    "title": "sprint-qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-18T19:00:00+02:00",
+                    "dateEnd": "2025-10-18T20:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1369,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-18T23:00:00+02:00",
+                    "dateEnd": "2025-10-18T23:59:59+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1370,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-19T21:00:00+02:00",
+                    "dateEnd": "2025-10-19T23:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 215,
+            "title": "Mexican GP",
+            "countryShort": "MEX",
+            "countryFull": "Mexican",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/mexican-gp",
+            "subEvents": [
+                {
+                    "id": 1371,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-24T20:30:00+02:00",
+                    "dateEnd": "2025-10-24T21:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1372,
+                    "title": "practice-2",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-25T00:00:00+02:00",
+                    "dateEnd": "2025-10-25T01:00:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1373,
+                    "title": "practice-3",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-25T19:30:00+02:00",
+                    "dateEnd": "2025-10-25T20:30:00+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1374,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-25T23:00:00+02:00",
+                    "dateEnd": "2025-10-25T23:59:59+02:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1375,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-10-26T21:00:00+01:00",
+                    "dateEnd": "2025-10-26T23:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 216,
+            "title": "Brazilian GP",
+            "countryShort": "BRA",
+            "countryFull": "Brazilian",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/brazilian-gp",
+            "subEvents": [
+                {
+                    "id": 1376,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-07T15:30:00+01:00",
+                    "dateEnd": "2025-11-07T16:30:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1377,
+                    "title": "sprint-shootout",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-07T19:30:00+01:00",
+                    "dateEnd": "2025-11-07T20:14:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1378,
+                    "title": "sprint-qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-08T15:00:00+01:00",
+                    "dateEnd": "2025-11-08T16:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1379,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-08T19:00:00+01:00",
+                    "dateEnd": "2025-11-08T20:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1380,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-09T18:00:00+01:00",
+                    "dateEnd": "2025-11-09T20:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 217,
+            "title": "Las Vegas GP",
+            "countryShort": "USA",
+            "countryFull": "Las Vegas",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/gp-las-vegas",
+            "subEvents": [
+                {
+                    "id": 1381,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-21T01:30:00+01:00",
+                    "dateEnd": "2025-11-21T02:30:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1382,
+                    "title": "practice-2",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-21T05:00:00+01:00",
+                    "dateEnd": "2025-11-21T06:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1383,
+                    "title": "practice-3",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-22T01:30:00+01:00",
+                    "dateEnd": "2025-11-22T02:30:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1384,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-22T05:00:00+01:00",
+                    "dateEnd": "2025-11-22T06:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1385,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-23T05:00:00+01:00",
+                    "dateEnd": "2025-11-23T07:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 218,
+            "title": "Qatar GP",
+            "countryShort": "QAT",
+            "countryFull": "Qatar",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/gp-qatar",
+            "subEvents": [
+                {
+                    "id": 1386,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-28T14:30:00+01:00",
+                    "dateEnd": "2025-11-28T15:30:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1387,
+                    "title": "sprint-shootout",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-28T18:30:00+01:00",
+                    "dateEnd": "2025-11-28T19:14:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1388,
+                    "title": "sprint-qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-29T15:00:00+01:00",
+                    "dateEnd": "2025-11-29T16:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1389,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-29T19:00:00+01:00",
+                    "dateEnd": "2025-11-29T20:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1390,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-11-30T17:00:00+01:00",
+                    "dateEnd": "2025-11-30T19:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        },
+        {
+            "id": 219,
+            "title": "Abu Dhabi GP",
+            "countryShort": "ARE",
+            "countryFull": "Abu Dhabi",
+            "urlDetail": "https://racingnews365.com/formula-1-circuits/abu-dhabi-gp",
+            "subEvents": [
+                {
+                    "id": 1391,
+                    "title": "practice-1",
+                    "status": "upcoming",
+                    "dateStart": "2025-12-05T10:30:00+01:00",
+                    "dateEnd": "2025-12-05T11:30:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1392,
+                    "title": "practice-2",
+                    "status": "upcoming",
+                    "dateStart": "2025-12-05T14:00:00+01:00",
+                    "dateEnd": "2025-12-05T15:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1393,
+                    "title": "practice-3",
+                    "status": "upcoming",
+                    "dateStart": "2025-12-06T11:30:00+01:00",
+                    "dateEnd": "2025-12-06T12:30:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1394,
+                    "title": "qualification",
+                    "status": "upcoming",
+                    "dateStart": "2025-12-06T15:00:00+01:00",
+                    "dateEnd": "2025-12-06T16:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                },
+                {
+                    "id": 1395,
+                    "title": "race",
+                    "status": "upcoming",
+                    "dateStart": "2025-12-07T14:00:00+01:00",
+                    "dateEnd": "2025-12-07T16:00:00+01:00",
+                    "result": [],
+                    "urlArticle": null
+                }
+            ]
+        }
+    ]
+}

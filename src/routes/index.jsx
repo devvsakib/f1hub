@@ -18,7 +18,7 @@ const GamesHub = lazy(() => import('../pages/GamesHub'));
 const ReactionGame = lazy(() => import('../components/games/ReactionGame'));
 const CircuitsList = lazy(() => import('../components/circuits/CircuitsList'));
 const CircuitDetail = lazy(() => import('../components/circuits/CircuitDetail'));
-const Calendar = lazy(() => import('../pages/Calendar'));
+const Calendars = lazy(() => import('../pages/Calendars'));
 const Standings = lazy(() => import('../pages/Standings'));
 const Live = lazy(() => import('../pages/Live'));
 
@@ -153,7 +153,7 @@ const router = createBrowserRouter([
                 path: 'calendar',
                 element: (
                     <Suspense fallback={<PageLoader />}>
-                        <Calendar />
+                        <Calendars />
                     </Suspense>
                 )
             },

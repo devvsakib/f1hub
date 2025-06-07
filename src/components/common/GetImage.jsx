@@ -12,9 +12,10 @@ const GetImage = ({ data, type = 'drivers', className, customClass = false }) =>
             car: 'cars',
             tyres: 'tyres',
             circuit: 'circuits',
+            flag: 'flags',
         };
         const folder = folderMap[type] || 'others';
-        const fileName = type === 'circuit' ? data.id :  data.name.replaceAll(' ', '-').toLowerCase();
+        const fileName = type === 'flag' ? data.flagCode.toLowerCase() : type === 'circuit' ? data.id : data.name.replaceAll(' ', '-').toLowerCase();
 
         const filePath = `/assets/${folder}/${folder === 'teams' ? fileName + '-logo' : fileName}${type === 'circuit' ? '.avif' : '.png'}`;
 
